@@ -23,6 +23,9 @@ BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder-v32.so \
