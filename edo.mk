@@ -17,9 +17,6 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Include GSI keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
 # Include common vendor stuff
 $(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
 
