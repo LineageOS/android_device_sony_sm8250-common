@@ -215,6 +215,9 @@ ro.hardware.keystore_desede=true
 debug.stagefright.omx_default_rank=0
 debug.stagefright.ccodec=1
 
+# Netflix custom property
+ro.netflix.bsp_rev=Q8250-19134-1
+
 # NFC
 ro.camera.notify_nfc=1
 
