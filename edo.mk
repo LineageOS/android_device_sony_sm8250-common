@@ -374,7 +374,9 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
     libmm-omxcore \
-    libcodec2_hidl@1.0.vendor
+    libc2dcolorconvert \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor
 
 # Light
 PRODUCT_PACKAGES += \
