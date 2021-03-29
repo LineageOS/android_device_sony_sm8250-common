@@ -76,3 +76,6 @@
 /sys/devices/virtual/input/input[0-9]+/tof_power_ctl      u:object_r:sysfs_camera:s0
 /sys/devices/virtual/input/input[0-9]+/tof_get_info       u:object_r:sysfs_camera:s0
 /sys/devices/virtual/input/input[0-9]+/tof_ranging_notify u:object_r:sysfs_camera:s0
+
+# NFC devices
+/dev/pn553                                                u:object_r:nfc_device:s0
