@@ -384,7 +384,6 @@
         <name>vendor.nxp.nxpnfc</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::INxpNfc/default</fqname>
-        <fqname>@2.0::INxpNfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.somc.hardware.swiqi</name>

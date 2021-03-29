@@ -99,3 +99,6 @@
 /sys/devices/virtual/misc/msm_wma/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_wmapro/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 
+# NFC devices
+/dev/pn553                                                u:object_r:nfc_device:s0
+
