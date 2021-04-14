@@ -80,7 +80,9 @@ extern "C" {
 #define AB_SLOT_B_SUFFIX                "_b"
 #define PTN_XBL                         "xbl"
 #define PTN_XBL_CFG                     "xbl_config"
-#define PTN_SWAP_LIST                   PTN_XBL, PTN_XBL_CFG, \
+#define PTN_MULTIIMGOEM                 "multiimgoem"
+#define PTN_MULTIIMGQTI                 "multiimgqti"
+#define PTN_SWAP_LIST                   PTN_XBL, PTN_XBL_CFG, PTN_MULTIIMGOEM, PTN_MULTIIMGQTI, \
             "rpm", "tz", "abl", "hyp", "keymaster", "cmnlib", \
             "cmnlib64", "pmic", "devcfg", "keystore", "mdtp", \
             "mdtpsecapp", "xfl", "tzxflattest", "tzxfl", "dtbo", "vbmeta"
