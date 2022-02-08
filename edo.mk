@@ -120,7 +120,6 @@ PRODUCT_PACKAGES += \
     audio_amplifier.kona
 
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.kona \
     audio.r_submix.default \
