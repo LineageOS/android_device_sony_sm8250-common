@@ -27,24 +27,23 @@ namespace android {
 namespace hardware {
 namespace light {
 
-#define LED_PATH(led)                       "/sys/class/leds/" led "/"
+#define LED_PATH(led) "/sys/class/leds/" led "/"
 
-static const std::string led_paths[] {
-    [RED] = LED_PATH("red"),
-    [GREEN] = LED_PATH("green"),
-    [BLUE] = LED_PATH("blue"),
-    [WHITE] = LED_PATH("white"),
+static const std::string led_paths[]{
+        [RED] = LED_PATH("red"),
+        [GREEN] = LED_PATH("green"),
+        [BLUE] = LED_PATH("blue"),
+        [WHITE] = LED_PATH("white"),
 };
 
 static const std::string kLCDFile = "/sys/class/backlight/panel0-backlight/brightness";
 
-#define AutoHwLight(light) {.id = (int)light, .type = light, .ordinal = 0}
+#define AutoHwLight(light) \
+    { .id = (int)light, .type = light, .ordinal = 0 }
 
 // List of supported lights
-const static std::vector<HwLight> kAvailableLights = {
-    AutoHwLight(LightType::BATTERY),
-    AutoHwLight(LightType::NOTIFICATIONS)
-};
+const static std::vector<HwLight> kAvailableLights = {AutoHwLight(LightType::BATTERY),
+                                                      AutoHwLight(LightType::NOTIFICATIONS)};
 
 Lights::Lights() {
     mWhiteLed = !access((led_paths[WHITE] + "brightness").c_str(), W_OK);
@@ -103,15 +102,11 @@ void Lights::setSpeakerLightLocked(const HwLightState& state) {
             if (mWhiteLed) {
                 rc = setLedBreath(WHITE, blink);
             } else {
-                if (!!red)
-                    rc = setLedBreath(RED, blink);
-                if (!!green)
-                    rc &= setLedBreath(GREEN, blink);
-                if (!!blue)
-                    rc &= setLedBreath(BLUE, blink);
+                if (!!red) rc = setLedBreath(RED, blink);
+                if (!!green) rc &= setLedBreath(GREEN, blink);
+                if (!!blue) rc &= setLedBreath(BLUE, blink);
             }
-            if (rc)
-                break;
+            if (rc) break;
             FALLTHROUGH_INTENDED;
         case FlashMode::NONE:
         default:

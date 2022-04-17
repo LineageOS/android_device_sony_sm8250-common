@@ -31,13 +31,13 @@ enum led_type {
 };
 
 class Lights : public BnLights {
-public:
+  public:
     Lights();
 
     ndk::ScopedAStatus setLightState(int id, const HwLightState& state) override;
     ndk::ScopedAStatus getLights(std::vector<HwLight>* types) override;
 
-private:
+  private:
     void setSpeakerLightLocked(const HwLightState& state);
     void handleSpeakerBatteryLocked();
 
