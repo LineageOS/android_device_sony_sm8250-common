@@ -1,7 +1,0 @@
-sys.display.mode    u:object_r:config_prop:s0
-
-drmdiag.load        u:object_r:vendor_other_prop:s0
-persist.ims.regmanager.mode     u:object_r:vendor_other_prop:s0
-ro.data.large_tcp_window_size u:object_r:vendor_other_prop:s0
-ro.logdumpd.enabled u:object_r:vendor_other_prop:s0
-persist.usb.eng u:object_r:vendor_other_prop:s0

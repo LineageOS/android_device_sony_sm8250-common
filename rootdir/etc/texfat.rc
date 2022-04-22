@@ -1,0 +1,3 @@
+on early-init
+    # Install exfat module to support exfat file system
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules  texfat

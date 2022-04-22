@@ -1,0 +1,58 @@
+# Copyright (c) 2019 Sony Mobile Communications Inc.
+#
+# product common configuration
+#
+
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ \
+    sec_touchscreen \
+    bu520x1nvx
+
+on boot
+    write /sys/devices/virtual/sec/tsp/after_work 1
+    write /sys/module/sec_touchscreen/parameters/report_rejected_event 1
+    chown system system /sys/devices/virtual/sec/tsp/module_id
+    chmod 0600 /sys/devices/virtual/sec/tsp/module_id
+    chown system system /sys/devices/virtual/sec/tsp/cmd
+    chmod 0600 /sys/devices/virtual/sec/tsp/cmd
+
+# Touch
+on property:vendor.smartstamina.touchreport=1
+    write /sys/devices/virtual/sec/tsp/cmd "stamina_enable,1"
+
+on property:vendor.smartstamina.touchreport=0
+    write /sys/devices/virtual/sec/tsp/cmd "stamina_enable,0"
+
+# Touch
+on property:vendor.backlight_on=1
+    write /sys/devices/virtual/sec/tsp/cmd "touch_enable_irq,1"
+
+on property:vendor.backlight_on=0
+    write /sys/devices/virtual/sec/tsp/cmd "touch_enable_irq,0"
+
+on property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1
+    write /sys/devices/virtual/sec/tsp/cmd "set_lowpower_mode,0"
+
+on property:vendor.enable.always_on_display=1 && property:vendor.backlight_on=1
+    write /sys/devices/virtual/sec/tsp/cmd "set_lowpower_mode,1"
+
+on property:dev.bootcomplete=1 && property:vendor.wireless_charging=1
+    write /sys/devices/virtual/sec/tsp/cmd "wireless_charging,1"
+
+on property:dev.bootcomplete=1 && property:vendor.wireless_charging=0
+    write /sys/devices/virtual/sec/tsp/cmd "wireless_charging,0"
+
+# Display
+on property:persist.vendor.display.opec_mode=0 && property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1
+    write /sys/devices/dsi_panel_driver/opec_mode 0
+
+on property:persist.vendor.display.opec_mode=1 && property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1
+    write /sys/devices/dsi_panel_driver/opec_mode 1
+
+# Not reccomended to send HMD command during AOD in terms of HW,
+# so not set if vendor.enable.always_on_display = 1
+on property:vendor.display.hmd_mode=0 && property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1
+    write /sys/devices/dsi_panel_driver/hmd_mode 0
+
+on property:vendor.display.hmd_mode=1 && property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1
+    write /sys/devices/dsi_panel_driver/hmd_mode 1
