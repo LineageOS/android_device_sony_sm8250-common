@@ -239,7 +239,6 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.oem_socket=true
 persist.vendor.radio.enableadvancedscan=true
-ro.com.android.dataroaming=true
 
 # Sensors
 persist.vendor.sensors.sync_request=true
