@@ -1,0 +1,5 @@
+type tad_block_device, dev_type;
+type appslog_block_device, dev_type;
+type diag_block_device, dev_type;
+type etsd_device, dev_type;
+type hal_camera_sync, dev_type;

@@ -1,0 +1,7 @@
+binder_call(hal_disp_client, hal_disp_server);
+binder_call(hal_disp_server, hal_disp_client);
+
+add_hwservice(hal_disp_server, hal_disp_hwservice);
+allow hal_disp_client hal_disp_hwservice:hwservice_manager find;
+
+allow hal_disp_server hal_disp_framerate_hwservice:hwservice_manager { find add };

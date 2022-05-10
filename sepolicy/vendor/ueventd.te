@@ -1,0 +1,1 @@
+allow ueventd sony_camera_device:chr_file { create setattr };

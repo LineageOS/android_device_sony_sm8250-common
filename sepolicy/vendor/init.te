@@ -1,0 +1,28 @@
+allow init debugfs_tracing_debug:dir mounton;
+allow init hal_miscta_default_exec:file { read getattr map execute open };
+
+allow init { idd_root_dir idd_rca_dir }:dir mounton;
+
+allow init ta_qmi_service_exec:file { read getattr map execute open };
+allow init ta_qmi_service:process { transition siginh rlimitinh };
+dontaudit init ta_qmi_service:process noatsecure;
+
+allow init hal_disp_default_exec:file { read getattr map execute open };
+
+allow init hal_secd_default_exec:file { read getattr map execute open };
+allow init hal_secd_default:process { transition siginh rlimitinh };
+allow init hal_idd_default_exec:file { read getattr map execute open };
+
+allow init tee_device:chr_file getattr;
+
+allow init idd_exec:file { read getattr map execute open };
+
+allow init tad_socket:sock_file { write };
+
+allow init tad:unix_stream_socket { connectto };
+
+allow init keyprovd_exec:file { read getattr map execute open };
+
+allow init vendor_hal_soter_qti_exec:file { read getattr map execute open };
+
+allow init vendor_hal_soter_qti:process { transition siginh rlimitinh };

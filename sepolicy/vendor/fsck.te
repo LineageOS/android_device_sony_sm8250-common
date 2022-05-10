@@ -1,0 +1,5 @@
+allow fsck tmpfs:chr_file { ioctl read write };
+allow fsck { idd_rca_dir idd_root_dir }:dir getattr;
+allow fsck appslog_block_device:blk_file { ioctl read write getattr lock append map open watch watch_reads };
+allow fsck diag_block_device:blk_file { ioctl read write getattr lock append map open watch watch_reads };
+allowxperm fsck diag_block_device:blk_file ioctl { BLKSECDISCARD BLKDISCARD BLKPBSZGET BLKDISCARDZEROES BLKROGET };
