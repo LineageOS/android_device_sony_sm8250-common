@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2020, 2021 Sony Corporation
+-->
 <permissions>
-    <privapp-permissions package="com.qualcomm.wfd.service">
-        <permission name="android.permission.READ_FRAME_BUFFER"/>
-        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <privapp-permissions package="com.sonymobile.tvout.wifidisplay">
+        <permission name="com.sonymobile.permission.LCD_POWER_SAVE"/>
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_WIFI_CREDENTIAL"/>
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="com.sonymobile.permission.WFD_WIFI_SCAN"/>
     </privapp-permissions>
+
 </permissions>
