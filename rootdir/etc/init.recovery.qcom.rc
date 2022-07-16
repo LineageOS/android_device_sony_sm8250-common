@@ -6,13 +6,5 @@ on init
     setprop sys.usb.configfs 1
 
 on boot
-    chmod 0777 /custom/enable_touchscreen.sh
-    start enable_touchscreen
     write /sys/devices/virtual/sec/tsp/after_work 1
 
-service enable_touchscreen /custom/enable_touchscreen.sh
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0
