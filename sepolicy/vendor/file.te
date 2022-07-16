@@ -17,3 +17,5 @@ type sysfs_camera, fs_type, sysfs_type;
 # LTALabel
 type lta_label, fs_type;
 
+type sysfs_sects, fs_type, sysfs_type;
+
