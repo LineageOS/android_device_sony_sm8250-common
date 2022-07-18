@@ -14,6 +14,7 @@ on boot
     chown system system /sys/devices/virtual/sec/tsp/module_id
     chmod 0600 /sys/devices/virtual/sec/tsp/module_id
     chown system system /sys/devices/virtual/sec/tsp/cmd
+    chown system system /sys/devices/dsi_panel_driver/pre_sod_mode
     chmod 0600 /sys/devices/virtual/sec/tsp/cmd
 
 # Touch

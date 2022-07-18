@@ -55,3 +55,6 @@
 # Shell scripts
 /(vendor|system/vendor)/bin/init\.qcom\.msim\.sh        u:object_r:init-qcom-msim-sh_exec:s0
 
+# Sys
+/sys/devices/virtual/sec/tsp(/.*)?                              u:object_r:sysfs_tsp:s0
+/sys/devices/dsi_panel_driver(/.*)?                             u:object_r:sysfs_dp:s0

@@ -1,0 +1,5 @@
+allow hal_power_default sysfs_tsp:dir r_dir_perms;
+allow hal_power_default sysfs_tsp:file rw_file_perms;
+
+allow hal_power_default sysfs_dp:dir r_dir_perms;
+allow hal_power_default sysfs_dp:file rw_file_perms;
