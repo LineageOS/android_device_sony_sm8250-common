@@ -21,7 +21,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 BOARD_VENDOR := sony
 
-COMMON_PATH := device/sony/edo-common
+COMMON_PATH := device/sony/sm8250-common
 
 # A/B
 AB_OTA_UPDATER := true
