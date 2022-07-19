@@ -20,9 +20,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/sony/pdx203/pdx203-vendor.mk)
-
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
@@ -37,9 +34,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # PRODUCT_ENFORCE_RRO_TARGETS := *
-
-# VNDK
-PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -106,15 +100,10 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 # ADB
-# ifeq ($(TARGET_BUILD_VARIANT),eng)
+ifeq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.adb.secure=0
-# endif
-
-# ADB - Early
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.adb_early=1 \
-		service.adb.root=1
+endif
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -336,11 +325,6 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor \
     libhidltransport.vendor \
     libhwbinder.vendor
-
-# # HIDL
-# PRODUCT_PACKAGES += \
-#     libhidltransport \
-#     libhwbinder \
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
