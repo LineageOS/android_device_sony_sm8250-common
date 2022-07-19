@@ -1,3 +1,4 @@
+# HALs
 attribute hal_miscta;
 attribute hal_miscta_client;
 attribute hal_miscta_server;
