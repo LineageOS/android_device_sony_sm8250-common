@@ -4,7 +4,7 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/mlog_qmi_service       u:object_r:mlog_qmi_service_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/iddd                   u:object_r:idd_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/keyprovd               u:object_r:keyprovd_exec:s0
-
+/(vendor|system/vendor|odm|vendor/odm)/bin/sony_ext_uim_ctrl      u:object_r:ext_uim_ctrl_exec:s0
 
 # Data files
 /mnt/rca                                  u:object_r:idd_rca_dir:s0
@@ -53,6 +53,7 @@
 # Sys files
 /sys/devices/virtual/sec/tsp(/.*)?                              u:object_r:sysfs_tsp:s0
 /sys/devices/dsi_panel_driver(/.*)?                             u:object_r:sysfs_dp:s0
+
 # Inputs
 /sys/devices/virtual/input/input[0-9]+/als_Itime          u:object_r:sysfs_camera:s0
 /sys/devices/virtual/input/input[0-9]+/als_all            u:object_r:sysfs_camera:s0

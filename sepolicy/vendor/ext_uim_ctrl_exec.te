@@ -1,0 +1,10 @@
+type ext_uim_ctrl, domain;
+type ext_uim_ctrl_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(ext_uim_ctrl)
+
+allow ext_uim_ctrl vendor_toolbox_exec:file { read getattr map open };
+allow ext_uim_ctrl sysfs:file { write open };
+allow ext_uim_ctrl tad_socket:sock_file { write open };
+allow ext_uim_ctrl tad:unix_stream_socket connectto;
+allow ext_uim_ctrl proc_cmdline:file { read open };
