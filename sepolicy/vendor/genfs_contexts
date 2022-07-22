@@ -60,5 +60,3 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.q
 genfscon sysfs /devices/platform/soc/8804000.sdhci/leds                                                                     u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/virtual/leds                                                                                        u:object_r:sysfs_leds:s0
 
-# Touchscreen nodes
-genfscon sysfs /devices/virtual/sec/tsp/after_work u:object_r:sysfs_sects:s0
