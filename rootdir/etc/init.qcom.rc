@@ -884,13 +884,13 @@ service poweroffhandler /system/vendor/bin/poweroffhandler
 
 on property:persist.vendor.radio.multisim.config=dsds
     setprop persist.radio.multisim.config dsds
-    setprop ro.telephony.default_network "22,22"
+    setprop ro.telephony.default_network "33,33"
     setprop persist.vendor.radio.block_allow_data 1
     enable vendor.qcrild
     enable vendor.qcrild2
 
 on property:persist.vendor.radio.multisim.config=ss
-    setprop ro.telephony.default_network 22
+    setprop ro.telephony.default_network 33
     setprop persist.vendor.radio.block_allow_data 1
     enable vendor.qcrild
 
