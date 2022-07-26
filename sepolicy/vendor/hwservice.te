@@ -8,3 +8,4 @@ type hal_disp_framerate_hwservice, hwservice_manager_type;
 type nxpese_hwservice, hwservice_manager_type;
 type hal_egis_hwservice, hwservice_manager_type;
 type somc_hw_radio_hwservice, hwservice_manager_type;
+type hal_somc_charger_hwservice, hwservice_manager_type;

@@ -453,7 +453,8 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/sony
 
 # Telephony
 PRODUCT_PACKAGES += \
