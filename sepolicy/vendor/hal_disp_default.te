@@ -8,3 +8,10 @@ allow hal_disp_default vndbinder_device:chr_file rw_file_perms;
 
 allow hal_disp_default vendor_display_color_prop:file { read getattr map open };
 allow hal_disp_default vendor_display_color_prop:property_service set;
+
+allow hal_disp_default property_socket:sock_file { write };
+allow hal_disp_default init:unix_stream_socket { connectto };
+
+allow hal_disp_default tad_socket:sock_file { write };
+allow hal_disp_default system_server:binder { call };
+allow hal_disp_default tad:unix_stream_socket { connectto };
