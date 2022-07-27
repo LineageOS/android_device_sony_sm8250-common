@@ -15,3 +15,7 @@ allow vendor_init tmpfs:chr_file { read open };
 allow vendor_init tmpfs:dir { create_dir_perms mounton };
 
 allow vendor_init persist_debug_prop:file read;
+
+allow vendor_init vendor_display_color_prop:property_service set;
+allow vendor_init vendor_display_color_prop:file { read getattr map open };
+
