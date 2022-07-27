@@ -202,6 +202,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# Charger
+PRODUCT_PACKAGES += \
+    vendor.semc.hardware.charger@1.0.vendor
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init_thermal.sh \
@@ -271,7 +275,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor
+    vendor.qti.hardware.display.mapper@4.0.vendor \
+    vendor.semc.hardware.display@2.2.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
