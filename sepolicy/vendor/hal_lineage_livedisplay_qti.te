@@ -1,0 +1,3 @@
+# Allow hal_lineage_livedisplay_qti to write to write display panel drive files
+allow hal_lineage_livedisplay_qti sysfs_dp:dir search;
+allow hal_lineage_livedisplay_qti sysfs_dp:file { getattr open write };
