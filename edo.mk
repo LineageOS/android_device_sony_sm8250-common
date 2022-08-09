@@ -99,12 +99,6 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
-# ADB
-ifeq ($(TARGET_BUILD_VARIANT),eng)
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.adb.secure=0
-endif
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
