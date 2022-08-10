@@ -10,3 +10,6 @@ vendor.camera.sensor.name.front u:object_r:somc_camera_prop:s0
 
 vendor.demo. u:object_r:demo_prop:s0
 vendor.camera.sensor.		u:object_r:vendor_camera_sensor_prop:s0
+persist.vendor.somc.cust.        u:object_r:cust_system_prop:s0
+
+

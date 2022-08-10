@@ -226,6 +226,7 @@ PRODUCT_PACKAGES += \
     init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
+    init.qcom.msim.sh \
     init.qcom.factory.rc \
     init.qcom.post_boot.sh \
     init.qcom.rc \
@@ -454,7 +455,8 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2 \
     extphonelib \
-    extphonelib.xml
+    extphonelib.xml \
+    ModemConfig
 
 # Sensors
 PRODUCT_PACKAGES += \

@@ -473,6 +473,12 @@ on property:persist.vendor.radio.atfwd.start=false
 on property:vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
+service msim_sh /vendor/bin/init.qcom.msim.sh
+    class core
+    user root
+    group root
+    oneshot
+
 # corefile limit
 on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
@@ -887,6 +893,18 @@ service poweroffhandler /system/vendor/bin/poweroffhandler
     group graphics audio
     disabled
     oneshot
+
+on property:persist.vendor.radio.multisim.config=dsds
+    setprop persist.radio.multisim.config dsds
+    setprop ro.telephony.default_network "22,22"
+    setprop persist.vendor.radio.block_allow_data 1
+    enable vendor.qcrild
+    enable vendor.qcrild2
+
+on property:persist.vendor.radio.multisim.config=ss
+    setprop ro.telephony.default_network 22
+    setprop persist.vendor.radio.block_allow_data 1
+    enable vendor.qcrild
 
 # Logcat dump daemon, dumps logs to logdump partition
 service logdumpd /system/bin/logcat -b all -v threadtime -D -w /dev/block/bootdevice/by-name/logdump

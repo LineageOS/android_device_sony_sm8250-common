@@ -48,3 +48,10 @@
 /data/vendor/3dra(/.*)?                                         u:object_r:vendor_audio_data_file:s0
 
 /dev/camera_sync u:object_r:hal_camera_sync:s0
+
+# Block devices
+/dev/block/platform/soc/1d84000\.ufshc/by-name/LTALabel    u:object_r:ltalabel_block_device:s0
+
+# Shell scripts
+/(vendor|system/vendor)/bin/init\.qcom\.msim\.sh        u:object_r:init-qcom-msim-sh_exec:s0
+

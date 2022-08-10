@@ -10,3 +10,4 @@ allow tad tad_block_device:blk_file { ioctl read write open };
 allowxperm tad tad_block_device:blk_file ioctl { BLKGETSIZE BLKSSZGET };
 
 allow tad init:unix_stream_socket { listen accept };
+
