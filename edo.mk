@@ -455,7 +455,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
-    libxml2
+    libxml2 \
+    extphonelib \
+    extphonelib.xml
 
 # Sensors
 PRODUCT_PACKAGES += \
