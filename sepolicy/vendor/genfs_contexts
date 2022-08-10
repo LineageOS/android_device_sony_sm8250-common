@@ -56,9 +56,29 @@ genfscon sysfs /devices/platform/soc/1c10000.qcom,pcie/pci0002:00/0002:00:00.0/0
 genfscon sysfs /devices/platform/soc/1.sony,camera_modules/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 
 genfscon sysfs /devices/virtual/input/input7/als_Itime u:object_r:sysfs_camera:s0
-genfscon sysfs /devices/virtual/input/input7/chip_pow    u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_all u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_auto_gain u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_blue u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_channel u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_clear u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_gain u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_green u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_persist u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/virtual/input/input7/als_power_state u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_red u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_thres u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/als_thresh_deltaP u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/chip_id u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/chip_pow    u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/notify u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/tof_power_ctl      u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/tof_get_info       u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input7/tof_ranging_notify u:object_r:sysfs_camera:s0
 
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pm8150b@3:qcom,leds@d000/leds u:object_r:sysfs_leds:s0
+
+genfscon sysfs /devices/platform/soc/8804000.sdhci/leds u:object_r:sysfs_leds:s0
+
+genfscon sysfs /devices/virtual/leds u:object_r:sysfs_leds:s0

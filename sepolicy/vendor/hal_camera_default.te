@@ -1,3 +1,5 @@
+hal_client_domain(hal_camera_default, hal_configstore)
+
 allow hal_camera_default sony_camera_device:chr_file rw_file_perms;
 
 allow hal_camera_default tad:unix_stream_socket connectto;
@@ -21,3 +23,5 @@ allow hal_camera_default hal_secd_hwservice:hwservice_manager { find };
 allow hal_camera_default hal_camera_sync:chr_file { ioctl read write getattr lock append map open watch watch_reads };
 
 allow hal_camera_default system_server:binder { call transfer };
+
+allow hal_camera_default hal_secd_default:binder call;
