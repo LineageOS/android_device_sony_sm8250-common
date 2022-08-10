@@ -42,7 +42,6 @@ static const std::string kLCDFile = "/sys/class/backlight/panel0-backlight/brigh
 
 // List of supported lights
 const static std::vector<HwLight> kAvailableLights = {
-    AutoHwLight(LightType::BACKLIGHT),
     AutoHwLight(LightType::BATTERY),
     AutoHwLight(LightType::NOTIFICATIONS)
 };
@@ -54,9 +53,6 @@ Lights::Lights() {
 // AIDL methods
 ndk::ScopedAStatus Lights::setLightState(int id, const HwLightState& state) {
     switch (id) {
-        case (int)LightType::BACKLIGHT:
-            WriteToFile(kLCDFile, RgbaToBrightness(state.color));
-            break;
         case (int)LightType::BATTERY:
             mBattery = state;
             handleSpeakerBatteryLocked();

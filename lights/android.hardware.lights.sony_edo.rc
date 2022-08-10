@@ -26,3 +26,4 @@ service vendor.light /vendor/bin/hw/android.hardware.lights-service.sony_edo
     user system
     group system
     shutdown critical
+
