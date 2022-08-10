@@ -47,8 +47,4 @@
 
 /data/vendor/3dra(/.*)?                                         u:object_r:vendor_audio_data_file:s0
 
-/sys/devices/virtual/leds/flash_led/oneshot u:object_r:vendor_sysfs_graphics:s0
-
-/dev/pn553 u:object_r:nfc_device:s0
-
 /dev/camera_sync u:object_r:hal_camera_sync:s0

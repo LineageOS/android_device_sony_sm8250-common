@@ -14,3 +14,5 @@ allow keyprovd tad:unix_stream_socket { connectto };
 
 allow keyprovd hal_secd_hwservice:hwservice_manager find;
 
+allow keyprovd vendor_hal_soter_hwservice:hwservice_manager find;
+allow keyprovd vendor_hal_soter_qti:binder { call };

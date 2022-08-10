@@ -406,8 +406,9 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-	android.hardware.secure_element@1.1.vendor \
-	android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.nfc@1.2.vendor \
     NfcNci \
     SecureElement \
     Tag
@@ -499,6 +500,9 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+
+# NXP NFC
+$(call inherit-product, vendor/nxp/nfc/nfc-vendor-product.mk)
 
 # WiFi
 PRODUCT_PACKAGES += \

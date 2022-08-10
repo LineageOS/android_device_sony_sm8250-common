@@ -445,14 +445,4 @@
         </interface>
         <fqname>@1.0::IQspmhal/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpnfclegacy</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpNfcLegacy</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::INxpNfcLegacy/default</fqname>
-    </hal>
 </manifest>
