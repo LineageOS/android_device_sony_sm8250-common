@@ -15,11 +15,23 @@
     <!-- Wifi driver Automatic channel selection (ACS) for softap to include DFS channels -->
     <bool name="config_wifiSoftapAcsIncludeDfs">true</bool>
 
+    <!-- Wifi driver supports IEEE80211AX single user beamformee for softap -->
+    <bool translatable="false" name="config_wifiSoftapHeSuBeamformeeSupported">true</bool>
+
+     <!-- Wifi driver supports IEEE80211AX single user beamformer for softap -->
+     <bool translatable="false" name="config_wifiSoftapHeSuBeamformerSupported">true</bool>
+
+     <!-- Wifi driver supports IEEE80211AX for softap -->
+     <bool translatable="false" name="config_wifiSoftapIeee80211axSupported">true</bool>
+
     <!-- Boolean indicating whether the wifi chipset supports background scanning mechanism.
          This mechanism allows the host to remain in suspend state and the dongle to actively
          scan and wake the host when a configured SSID is detected by the dongle. This chipset
          capability can provide power savings when wifi needs to be always kept on. -->
     <bool name="config_wifi_background_scan_support">true</bool>
+
+    <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
+    <bool name="config_wifi_fast_bss_transition_enabled">true</bool>
 
     <!-- Indicates that connected MAC randomization is supported on this device -->
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
