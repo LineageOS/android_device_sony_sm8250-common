@@ -20,29 +20,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#pragma push_macro("PROPERTY_VALUE_MAX")
-
-#include <cutils/properties.h>
-#include <string.h>
-
-static inline const char* getBTDefaultName()
-{
-    char device[PROPERTY_VALUE_MAX];
-    property_get("ro.boot.hardware", device, "");
-
-    if (!strcmp("pdx203", device)) {
-        return "Xperia 1 II";
-    }
-
-    if (!strcmp("pdx206", device)) {
-        return "Xperia 5 II";
-    }
-
-    return "Xperia";
-}
-
-
-#define BTM_DEF_LOCAL_NAME getBTDefaultName()
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    32
@@ -53,5 +30,4 @@ static inline const char* getBTDefaultName()
 
 #define AVDT_NUM_SEPS 35
 
-#pragma pop_macro("PROPERTY_VALUE_MAX")
 #endif
