@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec1ca5e9_76a733ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2022-10-09T11:45:56Z",
+      "side": 1,
+      "message": "This fixes the `fdsan` error thrown by Sony\u0027s camera library:\n\nF libc    : fdsan: attempted to close file descriptor 41, expected to be unowned, actually owned by unique_fd 0x721c5face0\n\nHowever, setting this flags might not be what we wanted....",
+      "revId": "b98446c6ea3be0d6eb2c9da6574989df2354f35e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
