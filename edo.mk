@@ -453,6 +453,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/sony
 
+# Set fdsan to the warn_once severity level
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.fdsan=warn_once
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
