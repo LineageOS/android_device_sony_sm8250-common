@@ -239,7 +239,8 @@ PRODUCT_PACKAGES += \
     init.nfc.rc \
     init.sony-device-common.rc \
     init.sony-platform.rc \
-    init.sony.usb.rc
+    init.sony.usb.rc \
+    init.sony.rc
 
 # Component overrides
 PRODUCT_COPY_FILES += \

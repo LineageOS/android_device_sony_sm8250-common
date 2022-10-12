@@ -17,4 +17,3 @@ if [[ "${MSIM_DEVICE}" -eq 1 ]]; then
 else
     setprop persist.vendor.radio.multisim.config ss
 fi
-
