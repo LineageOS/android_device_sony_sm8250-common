@@ -807,6 +807,28 @@ vendor/etc/system_properties.xml
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
+# Media (Qcom Codec)
+vendor/bin/hw/vendor.qti.media.c2@1.0-service
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
+vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
+vendor/lib/libstagefright_hdcp.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
+vendor/lib64/libstagefright_hdcp.so
+vendor/lib64/libstagefright_soft_qtiflacdec.so
+vendor/lib/libqcodec2_core.so
+vendor/lib/libqcodec2_base.so
+vendor/lib/libqcodec2_basecodec.so
+vendor/lib/libqcodec2_utils.so
+vendor/lib/libqcodec2_platform.so
+vendor/lib/libqcodec2_v4l2codec.so
+vendor/lib64/libqcodec2_core.so
+vendor/lib64/libqcodec2_base.so
+vendor/lib64/libqcodec2_basecodec.so
+vendor/lib64/libqcodec2_utils.so
+vendor/lib64/libqcodec2_platform.so
+vendor/lib64/libqcodec2_v4l2codec.so
+
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
@@ -1463,6 +1485,10 @@ vendor/lib/libwfduibcsink_proprietary.so
 vendor/lib/libwfdsourcesm_proprietary.so
 vendor/lib/libwfdmminterface_proprietary.so
 vendor/lib/libwfduibcinterface_proprietary.so
+vendor/lib/libmmrtpdecoder_proprietary.so
+vendor/lib64/libmmrtpdecoder_proprietary.so
+vendor/lib/libmmrtpencoder_proprietary.so
+vendor/lib64/libmmrtpencoder_proprietary.so
 -system_ext/priv-app/WfdService/WfdService.apk
 
 # VPP
