@@ -13,7 +13,7 @@ for device in "${MSIM_DEVICES[@]}"; do
 done
 
 if [[ "${MSIM_DEVICE}" -eq 1 ]]; then
-    setprop persist.vendor.radio.multisim.config dsds
+    setprop vendor.radio.multisim.config dsds
 else
-    setprop persist.vendor.radio.multisim.config ss
+    setprop vendor.radio.multisim.config ss
 fi
