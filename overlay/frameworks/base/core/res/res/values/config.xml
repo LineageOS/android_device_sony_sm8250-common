@@ -475,5 +475,8 @@
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
+
+    <!-- Is the device capable of hot swapping an UICC Card -->
+    <bool name="config_hotswapCapable">true</bool>
 </resources>
 
