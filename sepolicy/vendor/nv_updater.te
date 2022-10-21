@@ -1,0 +1,16 @@
+type nv_updater, domain;
+type nv_updater_exec, exec_type, vendor_file_type, file_type;
+type nvconfig_file_type, file_type, data_file_type;
+
+init_daemon_domain(nv_updater)
+
+# Allow nv_updater to access tad
+unix_socket_connect(ta_qmi_service, tad, tad)
+
+allow nv_updater vendor_diag_device:chr_file { ioctl read write getattr lock append map open watch watch_reads };
+allow nv_updater vendor_data_file:dir { write lock open add_name remove_name search };
+allow nv_updater vendor_data_file:file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads };
+allow nv_updater nvconfig_file_type:dir { ioctl read write getattr lock open watch watch_reads add_name remove_name search };
+allow nv_updater nvconfig_file_type:file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads };
+allow nv_updater tad_socket:sock_file write;
+allow nv_updater tad:unix_stream_socket { connectto };

@@ -5,6 +5,7 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/iddd                   u:object_r:idd_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/keyprovd               u:object_r:keyprovd_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/sony_ext_uim_ctrl      u:object_r:ext_uim_ctrl_exec:s0
+/(vendor|system/vendor|odm|vendor/odm)/bin/nv_updater             u:object_r:nv_updater_exec:s0
 
 # Data files
 /mnt/rca                                  u:object_r:idd_rca_dir:s0

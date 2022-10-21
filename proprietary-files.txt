@@ -1004,6 +1004,8 @@ vendor/bin/qti
 vendor/bin/rmt_storage
 vendor/bin/ssgtzd
 vendor/bin/tftp_server
+vendor/bin/nv_updater
+vendor/etc/init/nv_updater.rc
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/ssg/ta_config.json
