@@ -22,6 +22,30 @@
       },
       "revId": "ff50e9f2fc6cc16afeb2a3dde1111e6860f3cd70",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0104597c_f5a93168",
+        "filename": "sepolicy/vendor/hal_disp_default.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2022-10-25T15:19:51Z",
+      "side": 1,
+      "message": "The macro only has: \n\n```\n# Allow the serverdomain to transfer references to the client on the reply.\nallow $2 $1:binder transfer;\n```\n\nBut dont have this `call` rule I think?",
+      "parentUuid": "d4a7113a_50b141ed",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 50
+      },
+      "revId": "ff50e9f2fc6cc16afeb2a3dde1111e6860f3cd70",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
