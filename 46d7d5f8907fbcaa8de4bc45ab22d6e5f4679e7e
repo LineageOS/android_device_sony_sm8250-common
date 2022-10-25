@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "deaef5a4_c9166e3b",
+        "filename": "sepolicy/vendor/system_app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-10-25T13:29:31Z",
+      "side": 1,
+      "message": "allow system_app hal_disp_default:binder { call transfer };\n\nBut better than that is using binder_call macro: https://github.com/LineageOS/android_system_sepolicy/blob/lineage-19.1/public/te_macros#L398",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 54
+      },
+      "revId": "46d7d5f8907fbcaa8de4bc45ab22d6e5f4679e7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
