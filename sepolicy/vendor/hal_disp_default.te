@@ -15,3 +15,5 @@ allow hal_disp_default init:unix_stream_socket { connectto };
 allow hal_disp_default tad_socket:sock_file { write };
 allow hal_disp_default system_server:binder { call };
 allow hal_disp_default tad:unix_stream_socket { connectto };
+allow hal_disp_default system_app:binder { call };
+
