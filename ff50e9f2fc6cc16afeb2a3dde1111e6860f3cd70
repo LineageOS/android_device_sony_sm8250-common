@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d4a7113a_50b141ed",
+        "filename": "sepolicy/vendor/hal_disp_default.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-10-25T15:06:12Z",
+      "side": 1,
+      "message": "You no longer need this now, since you\u0027re using the macro.",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 50
+      },
+      "revId": "ff50e9f2fc6cc16afeb2a3dde1111e6860f3cd70",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
