@@ -1339,12 +1339,16 @@ system_ext/framework/qti-telephony-common.jar
 
 # Thermal engine
 vendor/bin/thermal-engine
+vendor/etc/init/init_thermal-engine.rc
+vendor/etc/thermal-engine.conf
 vendor/lib/hw/thermal.somc.so
 vendor/lib/libsomc_thermal.so
 vendor/lib/libthermal_engine.so
 -vendor/lib/libthermalclient.so
 vendor/lib64/hw/thermal.somc.so
+vendor/lib64/liblights-core.so
 vendor/lib64/libsomc_thermal.so
+vendor/lib64/libsys-utils.so
 vendor/lib64/libthermal_engine.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.semc.hardware.thermal@1.0.so
