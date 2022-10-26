@@ -27,13 +27,10 @@ vendor/etc/acdbdata/Sony_edo_Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/workspaceFile_Sony_edo.qwsp
 vendor/lib/libacdbloader.so
-vendor/lib64/libacdbloader.so
 
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
 vendor/lib/libfastcrc.so
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/libadsp_default_listener.so
@@ -89,14 +86,9 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libqtigef.so
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioparsers.so
-vendor/lib64/libqtigef.so
 
 # Audio FX Modules
 system_ext/etc/permissions/audiosphere.xml
@@ -135,7 +127,6 @@ vendor/lib/libdapparamstorage.so
 vendor/lib/libiVptApi.so
 vendor/lib/libiVptHkiDec.so
 vendor/lib/libiVptLibC.so
-vendor/lib/libops.so
 vendor/lib/librebuffering.so
 vendor/lib/libsnpe_dsp_domains_v2.so
 vendor/lib/libsony3daudioeffect.so
@@ -143,25 +134,18 @@ vendor/lib/libsymphony-cpu.so
 vendor/lib/libvpt3d.so
 vendor/lib/libznr.so
 vendor/lib/vendor.dolby.hardware.dms@1.0.so
-vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswdap.so
 vendor/lib64/libHpEqApi.so
 vendor/lib64/libOARenderer.so
 vendor/lib64/libSForceVSE.so
-vendor/lib64/libaudiokeymgr.so
-vendor/lib64/libdapparamstorage.so
 vendor/lib64/libiVptApi.so
 vendor/lib64/libiVptHkiDec.so
 vendor/lib64/libiVptLibC.so
 vendor/lib64/libops.so
-vendor/lib64/librebuffering.so
 vendor/lib64/libsony3daudioeffect.so
 vendor/lib64/libvpt3d.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 
 # Authsecret
 vendor/bin/hw/android.hardware.authsecret@1.0-service-qti
@@ -170,9 +154,7 @@ vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/libbt-hidlclient.so
-vendor/lib/libbtnv.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
@@ -181,24 +163,13 @@ vendor/lib64/libbtnv.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbluetooth_audio_session_qti_2_1.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
@@ -208,19 +179,12 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Bluetooth (Other libs)
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libsoc_helper.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
 # Camera postprocessing
-vendor/lib/libscveCommon.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libscveObjectSegmentation.so
-vendor/lib/libscveObjectSegmentation_stub.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/libscveObjectTracker_stub.so
 vendor/lib64/libscveCommon.so
 vendor/lib64/libscveCommon_stub.so
 vendor/lib64/libscveObjectSegmentation.so
@@ -230,10 +194,8 @@ vendor/lib64/libscveObjectTracker_stub.so
 
 # CDSP
 vendor/bin/cdsprpcd
-vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
 vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
@@ -333,27 +295,9 @@ vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
-vendor/lib/libcne.so
-vendor/lib/libcneapiclient.so
-vendor/lib/libcneoplookup.so
 vendor/lib/libcneqmiutils.so
-vendor/lib/libwms.so
-vendor/lib/libwqe.so
-vendor/lib/libxml.so
-vendor/lib/vendor.qti.data.factory@2.0.so
-vendor/lib/vendor.qti.data.factory@2.1.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
-vendor/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so
-vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so
-vendor/lib/vendor.qti.hardware.data.connection@1.0.so
-vendor/lib/vendor.qti.hardware.data.connection@1.1.so
-vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
-vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so
-vendor/lib/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib/vendor.qti.hardware.slmadapter@1.0.so
-vendor/lib/vendor.qti.latency@2.0.so
 vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
@@ -392,7 +336,6 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Display
 vendor/bin/hw/vendor.semc.hardware.display@2.2-service
 vendor/etc/init/vendor.semc.hardware.display@2.2-service.rc
-vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
 
 # Display (HDR)
@@ -459,13 +402,7 @@ system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/dpmapi.xml
 system_ext/framework/com.qti.dpmframework.jar
 system_ext/framework/dpmapi.jar
-system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so
-system_ext/lib/libdiag_system.so
 system_ext/lib/libdpmctmgr.so
-system_ext/lib/libdpmfdmgr.so
-system_ext/lib/libdpmframework.so
-system_ext/lib/libdpmtcm.so
-system_ext/lib/vendor.qti.diaghal@1.0.so
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/libdpmctmgr.so
@@ -476,27 +413,13 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
-vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
-vendor/lib/libdpmqmihal.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
 # DRM
 vendor/bin/qseecomd
-vendor/lib/libGPreqcancel.so
-vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libQSEEComAPI.so
 vendor/lib/libSecureUILib.so
-vendor/lib/libStDrvInt.so
 vendor/lib/libcppf.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/libqisl.so
-vendor/lib/librpmb.so
-vendor/lib/libsecureui.so
-vendor/lib/libsecureui_svcsock.so
-vendor/lib/libspl.so
-vendor/lib/libssd.so
 vendor/lib/libtzdrmgenprov.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
@@ -531,7 +454,6 @@ vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 # FM
 system_ext/lib/fm_helium.so
 system_ext/lib/libfm-hci.so
--system_ext/lib/vendor.qti.hardware.fm@1.0.so
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 -system_ext/lib64/vendor.qti.hardware.fm@1.0.so
@@ -540,7 +462,6 @@ vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Graphics (Adreno)
@@ -552,7 +473,6 @@ vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/libC2D2.so
-vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
 vendor/lib/libVkLayer_q3dtools.so
 vendor/lib/libadreno_utils.so
@@ -560,7 +480,6 @@ vendor/lib/libc2d30_bltlib.so
 vendor/lib/libgpudataproducer.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
@@ -605,8 +524,6 @@ vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
-vendor/lib/libcdfw_remote_api.so
-vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libbatching.so
@@ -661,8 +578,6 @@ vendor/etc/security/idd_config.pem
 vendor/etc/security/idd_report.pem
 vendor/etc/idd.fstab
 vendor/etc/iddd_user.conf
-vendor/lib/libidd.so
-vendor/lib/vendor.semc.system.idd@1.0.so
 vendor/lib64/libidd.so
 vendor/lib64/libprotobuf-c-idd.so
 vendor/lib64/vendor.semc.system.idd@1.0.so
@@ -761,10 +676,6 @@ vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 vendor/etc/init/keymasterd.rc
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
@@ -868,15 +779,12 @@ vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxSwVdec.so
 vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib/libspcom.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
@@ -889,12 +797,9 @@ vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/powerhint.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
 vendor/lib64/libperfconfig.so
@@ -914,21 +819,7 @@ vendor/bin/qmipriod
 vendor/etc/init/qmipriod.rc
 vendor/etc/sec_config
 vendor/lib/libdiag.so
-vendor/lib/libdsi_netctrl.so
-vendor/lib/libdsutils.so
-vendor/lib/libidl.so
 vendor/lib/libqcci_legacy.so
-vendor/lib/libqcmaputils.so
-vendor/lib/libqdi.so
-vendor/lib/libqdp.so
-vendor/lib/libqmi.so
-vendor/lib/libqmi_cci.so
-vendor/lib/libqmi_client_helper.so
-vendor/lib/libqmi_client_qmux.so
-vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_encdec.so
-vendor/lib/libqmiservices.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
@@ -950,14 +841,11 @@ vendor/lib64/libqmiservices.so
 vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
-vendor/lib/libqrtr.so
 vendor/lib64/libqrtr.so
 
 # Qteeconnector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
@@ -1093,13 +981,11 @@ system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so
 system_ext/lib64/vendor.qti.ims.callinfo@1.0.so
 system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
 system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
-vendor/lib/vendor.qti.data.slm@1.0.so
 
 # Secd
 lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.0.so
 lib64/vendor.somc.hardware.miscta@1.0.so:vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
-system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/hw/vendor.semc.hardware.secd@1.1-service
 vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
@@ -1108,9 +994,7 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/etc/init/vendor.semc.hardware.secd@1.1-service.rc
 vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
 vendor/lib/libdevice_security_vendor.so
-vendor/lib/libmiscta.so
 vendor/lib/libsuntory.so
-vendor/lib/vendor.qti.hardware.soter@1.0.so
 vendor/lib/vendor.somc.hardware.security.secd@1.1.so
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/libdevice_security_vendor.so
@@ -1151,7 +1035,6 @@ vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 vendor/etc/sensors/hals.conf
 vendor/etc/sap.conf
-vendor/lib/sensors.ssc.so
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
@@ -1321,13 +1204,11 @@ vendor/bin/tad
 
 # TA QMI
 vendor/bin/ta_qmi_service
--vendor/lib/libta.so
 -vendor/lib64/libta.so
 
 # Time services
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
-vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
 # Trimarea
@@ -1344,7 +1225,6 @@ vendor/etc/thermal-engine.conf
 vendor/lib/hw/thermal.somc.so
 vendor/lib/libsomc_thermal.so
 vendor/lib/libthermal_engine.so
--vendor/lib/libthermalclient.so
 vendor/lib64/hw/thermal.somc.so
 vendor/lib64/liblights-core.so
 vendor/lib64/libsomc_thermal.so
@@ -1355,11 +1235,9 @@ vendor/lib64/vendor.semc.hardware.thermal@1.0.so
 
 # Trusted Execution Environment connector
 # Trusted User Interface
-system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so
 system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Widevine DRM
@@ -1371,7 +1249,6 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libhdcprx_module.so
 vendor/lib/libhdcptx_module.so
 vendor/lib/liboemcrypto.so
-vendor/lib/libwvhidl.so
 vendor/lib/libwvtee.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libhdcprx_module.so
@@ -1487,7 +1364,6 @@ vendor/lib/vendor.somc.hardware.swiqi@1.0-impl.so
 vendor/lib/vendor.somc.hardware.swiqi@1.0.so
 vendor/lib64/libpfter.so
 vendor/lib64/libswiqisettinghelper.so
-vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvpplibrary.so
