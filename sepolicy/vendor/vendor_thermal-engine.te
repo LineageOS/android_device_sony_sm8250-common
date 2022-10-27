@@ -1,0 +1,7 @@
+set_prop(vendor_thermal-engine, somc_thermal_prop)
+hwbinder_use(vendor_thermal-engine)
+binder_call(vendor_thermal-engine, hal_idd_default)
+get_prop(vendor_thermal-engine, hwservicemanager_prop)
+
+allow vendor_thermal-engine hal_idd_hwservice:hwservice_manager find;
+
