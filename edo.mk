@@ -21,7 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
 
 # VNDK
-PRODUCT_SHIPPING_API_LEVEL := 29
+BOARD_API_LEVEL := 29
+BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
+PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 
 PRODUCT_COPY_FILES += \
