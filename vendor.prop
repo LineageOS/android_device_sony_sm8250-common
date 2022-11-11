@@ -27,6 +27,7 @@ persist.vendor.audio.latency_media_vibration_usb=0
 persist.vendor.audio.latency_media_vibration_a2dp=0
 persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.voicecall.speaker.stereo=true
+ro.audio.monitorRotation=true
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 vendor.audio_hal.period_size=192
