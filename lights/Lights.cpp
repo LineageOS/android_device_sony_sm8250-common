@@ -110,9 +110,7 @@ void Lights::setSpeakerLightLocked(const HwLightState& state) {
                 if (!!blue)
                     rc &= setLedBreath(BLUE, blink);
             }
-            if (rc)
-                break;
-            FALLTHROUGH_INTENDED;
+            break;
         case FlashMode::NONE:
         default:
             if (mWhiteLed) {
