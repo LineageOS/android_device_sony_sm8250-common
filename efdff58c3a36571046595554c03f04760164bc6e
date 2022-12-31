@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4956192f_abc4b659",
+        "filename": "bluetooth/bdroid_buildcfg.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2022-12-31T16:49:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "53f45997_32c96bbe",
+      "revId": "efdff58c3a36571046595554c03f04760164bc6e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "04ee2fa0_3c928e7d",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-12-31T12:24:40Z",
       "side": 1,
       "message": "Remove",
+      "revId": "efdff58c3a36571046595554c03f04760164bc6e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e90c546f_97ad0970",
+        "filename": "bluetooth/bdroid_buildcfg.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2022-12-31T16:49:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "04ee2fa0_3c928e7d",
       "revId": "efdff58c3a36571046595554c03f04760164bc6e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
