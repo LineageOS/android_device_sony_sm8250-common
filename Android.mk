@@ -40,31 +40,6 @@ $(DSP_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT)
 
-WCNSS_INI_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
-$(WCNSS_INI_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "WCNSS config ini link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /vendor/etc/wifi/$(notdir $@) $@
-
-WCNSS_MAC_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/wlan_mac.bin
-$(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "WCNSS MAC bin link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /mnt/vendor/persist/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
-
-BDWLAN_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin
-$(BDWLAN_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "bdwlan link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /vendor/etc/wifi/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(BDWLAN_SYMLINK)
-
 ### APQ
 RFS_APQ_GNSS_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/apq/gnss/
 $(RFS_APQ_GNSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -226,6 +201,19 @@ $(RFS_MSM_WPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
+WIFI_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware
+$(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating wifi firmware symlinks: $@"
+	@mkdir -p $@/wlan/qca_cld
+	@mkdir -p $@/qca6390
+	$(hide) ln -sf /vendor/etc/wifi/regdb.bin $@/qca6390/regdb.bin
+	$(hide) ln -sf /vendor/etc/wifi/bdwlan.e16 $@/qca6390/bdwlan.e16
+	$(hide) ln -sf /vendor/etc/wifi/bdwlan.e17 $@/qca6390/bdwlan.e17
+	$(hide) ln -sf /vendor/etc/wifi/bdwlan.elf $@/qca6390/bdwlan.elf
+	$(hide) ln -sf /data/vendor/firmware/wlanmdsp.mbn $@/wlanmdsp.otaupdate
+	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan/qca_cld/wlan_mac.bin
+	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/wlan/qca_cld/WCNSS_qcom_cfg.ini
+
 ALL_DEFAULT_INSTALLED_MODULES += \
     $(RFS_APQ_GNSS_SYMLINKS) \
     $(RFS_MDM_ADSP_SYMLINKS) \
@@ -238,6 +226,7 @@ ALL_DEFAULT_INSTALLED_MODULES += \
     $(RFS_MSM_CDSP_SYMLINKS) \
     $(RFS_MSM_MPSS_SYMLINKS) \
     $(RFS_MSM_SLPI_SYMLINKS) \
-    $(RFS_MSM_WPSS_SYMLINKS)
+    $(RFS_MSM_WPSS_SYMLINKS) \
+    $(WIFI_FIRMWARE_SYMLINKS)
 
 endif
