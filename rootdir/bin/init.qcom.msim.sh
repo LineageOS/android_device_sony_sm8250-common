@@ -1,7 +1,8 @@
 #!/vendor/bin/sh
 
 MSIM_DEVICES=(
-    xq-at52 xq-at72 # Dual-SIM version
+    xq-at42 xq-at52 xq-at72 # Xperia 1 II Dual-SIM version
+    xq-as42 xq-as52 xq-as62 xq-as72 # Xperia 5 II Dual-SIM version
 )
 MSIM_DEVICE=0
 
