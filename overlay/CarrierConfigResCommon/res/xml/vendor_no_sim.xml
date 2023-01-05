@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carrier_config_list>
+    <carrier_config sku="jp_dcm">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="show_call_blocking_disabled_notification_always_bool" value="true" />
+        <int name="duration_blocking_disabled_after_emergency_int" value="-1" />
+        <boolean name="show_blocking_pay_phone_option_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config device="SO-41A" sku="jp_dcm">
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+    </carrier_config>
+    <carrier_config sku="jp_kddi">
+        <boolean name="ignore_sim_network_locked_events_bool" value="true" />
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="show_blocking_pay_phone_option_bool" value="true" />
+    </carrier_config>
+    <carrier_config sku="jp_sbm">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="show_blocking_pay_phone_option_bool" value="true" />
+    </carrier_config>
+    <carrier_config sku="us">
+        <boolean name="rtt_supported_bool" value="true" />
+    </carrier_config>
+</carrier_config_list>
