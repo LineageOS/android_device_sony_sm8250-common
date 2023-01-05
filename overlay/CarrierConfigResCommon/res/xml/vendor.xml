@@ -1,0 +1,1970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="support_pause_ims_video_calls_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <boolean name="display_hd_audio_property_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="false" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="false" />
+        <boolean name="support_ims_conference_call_bool" value="true" />
+        <boolean name="support_manage_ims_conference_call_bool" value="true" />
+        <boolean name="support_video_conference_call_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="false" />
+        <boolean name="use_only_rsrp_for_lte_signal_bar_bool" value="false" />
+        <boolean name="show_ims_registration_status_bool" value="false" />
+        <boolean name="show_spn_for_home_in_choose_network_setting_bool" value="false" />
+        <boolean name="display_voicemail_number_as_default_call_forwarding_number" value="false" />
+        <int name="wfc_data_spn_format_idx_int" value="0" />
+        <int name="wfc_spn_format_idx_int" value="0" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string name="default_vm_number_string" />
+        <string name="wcdma_default_signal_strength_measurement_string">rssi</string>
+        <string name="carrier_name_string" />
+        <string name="gps.supl_host">supl.google.com</string>
+        <string name="gps.lpp_profile">2</string>
+        <string name="gps.use_emergency_pdn_for_emergency_supl">0</string>
+        <string name="gps.a_glonass_pos_protocol_select">2</string>
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-128" />
+            <item value="-118" />
+            <item value="-108" />
+            <item value="-98" />
+        </int-array>
+        <int-array name="wcdma_rscp_thresholds_int_array" num="4">
+            <item value="-115" />
+            <item value="-105" />
+            <item value="-95" />
+            <item value="-85" />
+        </int-array>
+        <string-array name="carrier_metered_apn_types_strings" num="4">
+            <item value="default" />
+            <item value="mms" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="read_only_apn_types_string_array" num="2">
+            <item value="dun" />
+            <item value="ims" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="4">
+            <item value="default" />
+            <item value="mms" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="gsm_nonroaming_networks_string_array" num="0" />
+        <string-array name="gsm_roaming_networks_string_array" num="0" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="false" />
+        <boolean name="inflate_signal_strength_bool" value="false" />
+        <boolean name="s_config_enable_ut_when_roaming_bool" value="true" />
+        <boolean name="s_config_enable_ut_when_data_off_bool" value="true" />
+        <boolean name="s_config_enable_ut_only_when_ims_registered_bool" value="false" />
+        <boolean name="s_config_enable_hos_apn_for_mms_type_vowifi_bool" value="false" />
+        <boolean name="s_config_enable_ut_bool" value="false" />
+        <boolean name="s_show_volte_icon_in_status_bar_bool" value="false" />
+        <boolean name="s_show_enhanced_4g_lte_qs_bool" value="false" />
+        <boolean name="s_show_wfc_qs_bool" value="false" />
+        <string name="s_config_enable_ut_allowed_networks_string" />
+        <string-array name="s_preferred_network_mode_rat_names_string_array" num="7">
+            <item value="GSM" />
+            <item value="WCDMA" />
+            <item value="CDMA" />
+            <item value="EvDo" />
+            <item value="LTE" />
+            <item value="TDSCDMA" />
+            <item value="5G NR" />
+        </string-array>
+        <string-array name="s_preferred_network_mode_marshal_string_array" num="5">
+            <item value="2" />
+            <item value="1" />
+            <item value="0" />
+            <item value="9" />
+            <item value="26" />
+        </string-array>
+        <boolean name="config_cellBroadcastAppLinks" value="true" />
+        <boolean name="groupChatDefaultsToMMS" value="true" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="false" />
+        <boolean name="smsEncodingChangeable" value="true" />
+        <boolean name="allowEnablingWapPushSI" value="false" />
+        <boolean name="enableWapPushSI" value="false" />
+        <boolean name="smsDeliveryReportSettingOnByDefault" value="false" />
+        <boolean name="carrier_force_disable_etws_cmas_test_bool" value="false" />
+        <boolean name="enableGroupMms" value="true" />
+        <boolean name="enableMMSDeliveryReports" value="true" />
+        <boolean name="enableSMSDeliveryReports" value="true" />
+        <boolean name="enabledMMS" value="true" />
+        <int name="maxMessageSize" value="307200" />
+        <int name="recipientLimit" value="50" />
+        <int name="smsToMmsTextThreshold" value="20" />
+        <string name="config_ims_package_override_string">com.google.android.ims</string>
+    </carrier_config>
+    <carrier_config>
+        <string-array name="s_carrier_default_actions_on_pco_value_string_array" num="0" />
+        <boolean name="s_show_wfc_request_location_bool" value="false" />
+        <boolean name="s_disable_data_during_network_scan" value="false" />
+        <boolean name="s_config_disable_tether_after_failed_bool" value="false" />
+        <boolean name="s_disable_data_when_2g_only_bool" value="false" />
+        <boolean name="s_support_answering_machine_bool" value="false" />
+        <int name="s_dpm_fd_delay_time_timer_int" value="1" />
+        <int name="s_dpm_fd_screen_off_idle_timer_int" value="3" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="0" />
+        <int name="s_dpm_fd_tethering_on_idle_timer_int" value="0" />
+        <boolean name="s_key_support_aes_bool" value="false" />
+        <boolean name="s_key_volte_auto_on_in_entitlement_bool" value="false" />
+        <boolean name="s_key_wfc_auto_on_in_entitlement_bool" value="false" />
+        <boolean name="s_enable_ss_over_ut_only_when_ims_entitled_bool" value="false" />
+        <int name="s_config_hysteresis_db" value="2" />
+    </carrier_config>
+    <carrier_config sku="jp_dcm">
+        <boolean name="s_support_answering_machine_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="show_call_blocking_disabled_notification_always_bool" value="true" />
+        <int name="duration_blocking_disabled_after_emergency_int" value="-1" />
+        <boolean name="show_blocking_pay_phone_option_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config device="SO-41A" sku="jp_dcm">
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+    </carrier_config>
+    <carrier_config sku="jp_kddi">
+        <boolean name="s_support_answering_machine_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+        <boolean name="ignore_sim_network_locked_events_bool" value="true" />
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="show_blocking_pay_phone_option_bool" value="true" />
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config sku="jp_sbm">
+        <boolean name="s_support_answering_machine_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="show_blocking_pay_phone_option_bool" value="true" />
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config device="A103SO" sku="jp_sbm">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config sku="rakuten">
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config>
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="world_mode_enabled_bool" value="false" />
+        <boolean name="support_direct_fdn_dialing_bool" value="true" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="true" />
+        <boolean name="show_blocking_pay_phone_option_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="true" />
+        <string name="gps.nfw_proxy_apps">com.sonymobile.gps.locationattribution</string>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+        <boolean name="show_single_operator_row_in_choose_network_setting_bool" value="false" />
+        <string name="smart_forwarding_config_component_name_string">com.sonymobile.telephony.extension/.dsr.DSReachabilitySetting</string>
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g,not_restricted_rrc_con:5g</string>
+        <string name="5g_icon_display_grace_period_string" />
+        <string name="5g_icon_display_secondary_grace_period_string" />
+        <int-array name="lte_rsrq_thresholds_int_array" num="4">
+            <item value="-19" />
+            <item value="-17" />
+            <item value="-14" />
+            <item value="-12" />
+        </int-array>
+        <int-array name="5g_nr_ssrsrp_thresholds_int_array" num="4">
+            <item value="-125" />
+            <item value="-115" />
+            <item value="-105" />
+            <item value="-95" />
+        </int-array>
+        <int name="parameters_used_for_lte_signal_bar_int" value="5" />
+        <int name="call_barring_default_service_class_int" value="0" />
+        <long name="carrier_data_call_apn_retry_after_disconnect_long" value="3000" />
+    </carrier_config>
+    <carrier_config mcc="001" mnc="01" spn="GTE">
+        <boolean name="s_config_enable_ut_bool" value="true" />
+        <boolean name="s_config_enable_ut_only_when_ims_registered_bool" value="true" />
+        <string name="s_config_enable_ut_allowed_networks_string">LTE,NR,IWLAN</string>
+        <boolean name="support_video_conference_call_bool" value="true" />
+        <boolean name="s_show_volte_icon_in_status_bar_bool" value="true" />
+        <boolean name="s_show_enhanced_4g_lte_qs_bool" value="true" />
+        <boolean name="s_show_wfc_qs_bool" value="true" />
+        <string-array name="read_only_apn_types_string_array" num="1">
+            <item value="ims" />
+        </string-array>
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_ims_registration_status_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="001" mnc="01" sku="jp_kddi">
+        <int name="imsi_key_availability_int" value="2" />
+        <string name="imsi_key_download_url_string">https://wificert.kddi.com/android</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="true" />
+        <string name="default_preferred_apn_name_string">uad5gn.au-net.ne.jp</string>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <long name="carrier_data_call_apn_delay_faster_long" value="1800000" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="ACTIVATION_REJECT_GGSN" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+        <string-array name="carrier_data_call_retry_config_strings" num="3">
+            <item value="default:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="mms:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="others:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+        </string-array>
+        <boolean name="hide_preset_apn_details_bool" value="true" />
+        <boolean name="s_config_disable_tether_after_failed_bool" value="true" />
+        <string name="default_vm_number_roaming_and_ims_unregistered_string">+819044441415</string>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <int-array name="disconnect_cause_play_busytone_int_array" num="8">
+            <item value="2" />
+            <item value="4" />
+            <item value="8" />
+            <item value="9" />
+            <item value="12" />
+            <item value="13" />
+            <item value="18" />
+            <item value="60" />
+        </int-array>
+        <int-array name="lte_rssnr_thresholds_int_array" num="4">
+            <item value="-5" />
+            <item value="-3" />
+            <item value="0" />
+            <item value="3" />
+        </int-array>
+        <int name="s_config_hysteresis_db" value="1" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="5" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="support_clir_network_default_bool" value="false" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="s_disable_data_during_network_scan" value="false" />
+        <boolean name="support_conference_call_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="2" />
+        <string name="config_ims_package_override_string">null</string>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="disable_charge_indication_bool" value="true" />
+        <boolean name="disable_dun_apn_while_roaming_with_preset_apn_bool" value="true" />
+        <boolean name="format_incoming_number_to_national_for_jp_bool" value="true" />
+        <string name="call_redirection_service_component_name_string">com.sonymobile.supplementallyservice.kddi/.KddiCallRedirectionService</string>
+    </carrier_config>
+    <carrier_config board="kona" mcc="001" mnc="01" sku="jp_kddi">
+        <int name="imsi_key_availability_int" value="0" />
+        <string name="imsi_key_download_url_string">null</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="false" />
+    </carrier_config>
+    <carrier_config board="trinket" mcc="001" mnc="01" sku="jp_kddi">
+        <int name="imsi_key_availability_int" value="0" />
+        <string name="imsi_key_download_url_string">null</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="001" mnc="02" spn="GTE">
+        <boolean name="s_config_enable_ut_bool" value="true" />
+        <boolean name="s_config_enable_ut_only_when_ims_registered_bool" value="true" />
+        <string name="s_config_enable_ut_allowed_networks_string">LTE,NR,IWLAN</string>
+        <boolean name="support_video_conference_call_bool" value="true" />
+        <boolean name="s_show_volte_icon_in_status_bar_bool" value="true" />
+        <boolean name="s_show_enhanced_4g_lte_qs_bool" value="true" />
+        <boolean name="s_show_wfc_qs_bool" value="true" />
+        <string-array name="read_only_apn_types_string_array" num="1">
+            <item value="ims" />
+        </string-array>
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_ims_registration_status_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="202" mnc="01">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+    </carrier_config>
+    <carrier_config mcc="204" mnc="04">
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <int name="emergency_notification_delay_int" value="0" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config gid1="BAE0000000000000" mcc="204" mnc="04">
+        <int name="volte_replacement_rat_int" value="3" />
+        <boolean name="carrier_promote_wfc_on_call_fail_bool" value="false" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g_plus,connected:5g,not_restricted_rrc_idle:5g,not_restricted_rrc_con:5g</string>
+        <string name="5g_icon_display_grace_period_string">connected_mmwave,any,3;not_restricted_rrc_idle,not_restricted_rrc_con,2</string>
+        <string name="5g_icon_display_secondary_grace_period_string">connected_mmwave,not_restricted_rrc_idle,60</string>
+        <int name="nr_advanced_capable_pco_id_int" value="0" />
+    </carrier_config>
+    <carrier_config mcc="204" mnc="12">
+        <string-array name="gsm_nonroaming_networks_string_array" num="1">
+            <item value="20408" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="204" mnc="16">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="204" mnc="20">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+    </carrier_config>
+    <carrier_config gid1="2800000000000000" mcc="206" mnc="01">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="206" mnc="05">
+        <string-array name="gsm_nonroaming_networks_string_array" num="2">
+            <item value="20610" />
+            <item value="20620" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="206" mnc="10">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+    </carrier_config>
+    <carrier_config mcc="206" mnc="10" spn="Orange B">
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="2800000000000000" mcc="206" mnc="20">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="208" mnc="01">
+        <boolean name="s_show_wfc_request_location_bool" value="true" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="support_no_reply_timer_for_cfnry_bool" value="false" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+    </carrier_config>
+    <carrier_config gid1="4e524a31" mcc="208" mnc="01">
+        <string name="vvm_type_string">vvm_type_not_supported</string>
+    </carrier_config>
+    <carrier_config mcc="208" mnc="01" spn="Orange F">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="208" mnc="10">
+        <boolean name="call_barring_visibility_bool" value="false" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="208" mnc="15">
+        <string-array name="gsm_nonroaming_networks_string_array" num="1">
+            <item value="20801" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="208" mnc="20">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="214">
+        <string-array name="unloggable_numbers_string_array" num="2">
+            <item value="016" />
+            <item value="900018018" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="214" mnc="01">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <int name="emergency_notification_delay_int" value="0" />
+    </carrier_config>
+    <carrier_config mcc="214" mnc="03">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+    </carrier_config>
+    <carrier_config imsi="^21403[^5][0-9]*" mcc="214" mnc="03">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="214" mnc="03" spn="Orange">
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="214" mnc="03" spn="JAZZTEL">
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="false" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="214" mnc="03" spn="simyo">
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="214" mnc="04" spn="Yoigo">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="214" mnc="05">
+        <boolean name="s_config_disable_tether_after_failed_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="214" mnc="07">
+        <boolean name="s_config_disable_tether_after_failed_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="214" mnc="07" spn="JAZZTEL">
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="214" mnc="19" spn="simyo">
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="214" mnc="21" spn="JAZZTEL">
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="216" mnc="30">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+    </carrier_config>
+    <carrier_config mcc="219" mnc="01">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="219" mnc="02">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="220" mnc="05">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config gid1="FFFFFFFFFFFFFFFFFF" imsi="^22288[^28][0-9]*" mcc="222" mnc="88">
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="0000000099" imsi="^22288[28][0-9]*" mcc="222" mnc="88">
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="222" mnc="99">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config gid1="0000000000" mcc="222" mnc="99">
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="226" mnc="10">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+    </carrier_config>
+    <carrier_config mcc="226" mnc="10" spn="orange">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="228" mnc="02">
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="230" mnc="01">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="230" mnc="02">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="230" mnc="03" spn="Vodafone CZ">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <int name="emergency_notification_delay_int" value="0" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="231" mnc="01">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+    </carrier_config>
+    <carrier_config mcc="231" mnc="01" spn="Orange">
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="231" mnc="02">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+    </carrier_config>
+    <carrier_config mcc="232" mnc="03">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="support_no_reply_timer_for_cfnry_bool" value="false" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+    </carrier_config>
+    <carrier_config mcc="232" mnc="04">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="support_no_reply_timer_for_cfnry_bool" value="false" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+    </carrier_config>
+    <carrier_config mcc="232" mnc="05">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+        <string-array name="gsm_nonroaming_networks_string_array" num="2">
+            <item value="23203" />
+            <item value="23210" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="232" mnc="07">
+        <boolean name="support_no_reply_timer_for_cfnry_bool" value="false" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+    </carrier_config>
+    <carrier_config mcc="232" mnc="10">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+        <string-array name="gsm_nonroaming_networks_string_array" num="2">
+            <item value="23203" />
+            <item value="23205" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="232" mnc="14">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+        <string-array name="gsm_nonroaming_networks_string_array" num="3">
+            <item value="23203" />
+            <item value="23205" />
+            <item value="23210" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="234" mnc="03">
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="10">
+        <boolean name="s_disable_data_when_2g_only_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="s_enable_ss_over_ut_only_when_ims_entitled_bool" value="true" />
+    </carrier_config>
+    <carrier_config gid1="0A" mcc="234" mnc="10">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="2" />
+    </carrier_config>
+    <carrier_config gid1="0AFFFF" mcc="234" mnc="10">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="2" />
+    </carrier_config>
+    <carrier_config gid1="0AFFFFFFFFFF544553434F202020202020202020" mcc="234" mnc="10">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="2" />
+    </carrier_config>
+    <carrier_config gid1="537" mcc="234" mnc="10">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="10" spn="giffgaff">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="2" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="10" spn="Jump">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="15">
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="show_single_operator_row_in_choose_network_setting_bool" value="true" />
+    </carrier_config>
+    <carrier_config gid1="C1" mcc="234" mnc="15">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config gid1="70" mcc="234" mnc="15">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="15" spn="Lebara">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="20">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <string-array name="carrier_default_actions_on_redirection_string_array" num="1">
+            <item value="9, 4, 0" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="0303" mcc="234" mnc="20">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="0305" mcc="234" mnc="20">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="20" spn="iD">
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="25">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="26" spn="Lycamobile">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="30">
+        <boolean name="s_show_wfc_request_location_bool" value="true" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="false" />
+        <string-array name="gsm_nonroaming_networks_string_array" num="1">
+            <item value="23433" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config gid1="2800000000000000" mcc="234" mnc="30">
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config gid1="B3" mcc="234" mnc="30">
+        <boolean name="carrier_name_override_bool" value="true" />
+    </carrier_config>
+    <carrier_config gid1="C3" mcc="234" mnc="30">
+        <boolean name="carrier_name_override_bool" value="true" />
+    </carrier_config>
+    <carrier_config gid1="28" mcc="234" mnc="30">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="30" spn="Virgin">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="33">
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="false" />
+        <boolean name="s_show_wfc_request_location_bool" value="true" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <string-array name="gsm_nonroaming_networks_string_array" num="1">
+            <item value="23430" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config gid1="B3" mcc="234" mnc="33">
+        <boolean name="carrier_name_override_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="38">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <string-array name="gsm_nonroaming_networks_string_array" num="2">
+            <item value="23430" />
+            <item value="23433" />
+        </string-array>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="39" spn="Jump">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="50">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="53" spn="GTE">
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="54" spn="GTE">
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="234" mnc="57">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <string-array name="gsm_nonroaming_networks_string_array" num="1">
+            <item value="23410" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="234" mnc="58">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="235" mnc="94">
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="238" mnc="02">
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="238" mnc="06">
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="238" mnc="20">
+        <boolean name="call_barring_visibility_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="240" mnc="01">
+        <boolean name="call_barring_visibility_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="240" mnc="02">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="0C" mcc="240" mnc="07">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="240" mnc="77">
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="s_enable_ss_over_ut_only_when_ims_entitled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="240" mnc="99">
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="242" mnc="02">
+        <boolean name="call_barring_visibility_bool" value="false" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="242" mnc="05">
+        <boolean name="call_barring_visibility_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="242" mnc="06">
+        <string-array name="non_roaming_operator_string_array" num="1">
+            <item value="242" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="242" mnc="14">
+        <string-array name="non_roaming_operator_string_array" num="1">
+            <item value="242" />
+        </string-array>
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="244" mnc="91">
+        <boolean name="call_barring_visibility_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="246" mnc="01">
+        <boolean name="skip_cf_fail_to_disable_dialog_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="248" mnc="01">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="248" mnc="02">
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="250" mnc="01">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="250" mnc="02">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="250" mnc="20">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="250" mnc="99">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="259" mnc="05">
+        <int-array name="only_single_dc_allowed_int_array" num="9">
+            <item value="0" />
+            <item value="1" />
+            <item value="2" />
+            <item value="3" />
+            <item value="9" />
+            <item value="10" />
+            <item value="11" />
+            <item value="14" />
+            <item value="15" />
+        </int-array>
+    </carrier_config>
+    <carrier_config mcc="260" mnc="01">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="260" mnc="02">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="260" mnc="03">
+        <int name="wfc_flight_mode_spn_format_idx_int" value="9" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+    </carrier_config>
+    <carrier_config mcc="260" mnc="03" spn="Orange">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="260" mnc="03" spn="nju">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="2" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="260" mnc="03" spn="Orange PL">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="260" mnc="06">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <int name="ims_conference_size_limit_int" value="6" />
+        <boolean name="is_ims_conference_size_enforced_bool" value="true" />
+        <string-array name="gsm_nonroaming_networks_string_array" num="3">
+            <item value="26001" />
+            <item value="26002" />
+            <item value="26003" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="260" mnc="98">
+        <int name="ims_conference_size_limit_int" value="6" />
+        <boolean name="is_ims_conference_size_enforced_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="01">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+        <int name="s_dpm_fd_screen_on_idle_timer_int" value="7" />
+        <boolean name="carrier_name_override_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="02">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+        <int name="emergency_notification_delay_int" value="0" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="03">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="07">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="09">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <int name="emergency_notification_delay_int" value="0" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="77">
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="88">
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="99">
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="272" mnc="01" spn="Postmobile">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="272" mnc="02">
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="272" mnc="03">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="272" mnc="05">
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="MISSING_UNKNOWN_APN" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="0A" mcc="272" mnc="11">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="272" mnc="16">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310">
+        <boolean name="inflate_signal_strength_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="030">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="070">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="090">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="150">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="160">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="170">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="200">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="210">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="220">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="230">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="240">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="250">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="260">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="270">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="280">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="300">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="310">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="380">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="410">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="490">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="530">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="560">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="580">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="590">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="640">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="660">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="680">
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310" mnc="800">
+        <boolean name="csp_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="311">
+        <boolean name="inflate_signal_strength_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="311" mnc="480">
+        <int name="volte_replacement_rat_int" value="3" />
+        <string-array name="carrier_app_wake_signal_config" num="1">
+            <item value="com.android.carrierdefaultapp/.CarrierDefaultBroadcastReceiver:                 com.android.internal.telephony.CARRIER_SIGNAL_PCO_VALUE" />
+        </string-array>
+        <string-array name="s_carrier_default_actions_on_pco_value_string_array" num="4">
+            <item value="2:1001" />
+            <item value="3:1001" />
+            <item value="5:1001" />
+            <item value="0:1002" />
+        </string-array>
+        <boolean name="carrier_promote_wfc_on_call_fail_bool" value="false" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g_plus,connected:5g,not_restricted_rrc_idle:5g,not_restricted_rrc_con:5g</string>
+        <string name="5g_icon_display_grace_period_string">connected_mmwave,any,3;not_restricted_rrc_idle,not_restricted_rrc_con,2</string>
+        <string name="5g_icon_display_secondary_grace_period_string">connected_mmwave,not_restricted_rrc_idle,60</string>
+        <int name="nr_advanced_capable_pco_id_int" value="0" />
+    </carrier_config>
+    <carrier_config mcc="405" mnc="22">
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="404" mnc="45">
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="404" mnc="90">
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="405" mnc="861">
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="405" mnc="874">
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="440">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="support_enhanced_call_blocking_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="true" />
+        <boolean name="show_signal_strength_in_sim_status_bool" value="false" />
+        <int name="gps.es_extension_sec" value="300" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="5" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-128" />
+            <item value="-123" />
+            <item value="-118" />
+            <item value="-108" />
+        </int-array>
+        <int-array name="lte_rssnr_thresholds_int_array" num="4">
+            <item value="-5" />
+            <item value="-3" />
+            <item value="0" />
+            <item value="0" />
+        </int-array>
+        <int name="s_config_hysteresis_db" value="0" />
+    </carrier_config>
+    <carrier_config mcc="440" mnc="10" sku="jp_dcm">
+        <boolean name="prevent_clir_activation_and_deactivation_code_bool" value="true" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="3" />
+        <int name="s_config_hysteresis_db" value="1" />
+        <string name="default_vm_number_roaming_string">+819031014170</string>
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="show_forwarded_number_bool" value="true" />
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="s_config_disable_tether_after_failed_bool" value="true" />
+        <int name="s_dpm_fd_screen_off_idle_timer_int" value="5" />
+        <boolean name="show_single_operator_row_in_choose_network_setting_bool" value="true" />
+        <string-array name="carrier_data_call_retry_config_strings" num="2">
+            <item value="default:default_randomization=2000,5000,10000,20000,40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="others:default_randomization=2000,5000,10000,20000,40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+        </string-array>
+        <boolean name="support_conference_call_bool" value="false" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <int-array name="only_single_dc_allowed_int_array" num="21">
+            <item value="0" />
+            <item value="1" />
+            <item value="2" />
+            <item value="3" />
+            <item value="4" />
+            <item value="5" />
+            <item value="6" />
+            <item value="7" />
+            <item value="8" />
+            <item value="9" />
+            <item value="10" />
+            <item value="11" />
+            <item value="12" />
+            <item value="13" />
+            <item value="14" />
+            <item value="15" />
+            <item value="16" />
+            <item value="17" />
+            <item value="18" />
+            <item value="19" />
+            <item value="20" />
+        </int-array>
+        <boolean name="support_enhanced_call_blocking_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="ims_reasoninfo_mapping_string_array" num="1">
+            <item value="332||510" />
+        </string-array>
+        <string name="config_ims_package_override_string">null</string>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <string-array name="read_only_apn_types_string_array" num="2">
+            <item value="dun" />
+            <item value="fota" />
+        </string-array>
+        <string-array name="apn_priority_string_array" num="12">
+            <item value="default:0" />
+            <item value="mms:3" />
+            <item value="supl:4" />
+            <item value="dun:7" />
+            <item value="hipri:5" />
+            <item value="fota:6" />
+            <item value="ims:8" />
+            <item value="cbs:9" />
+            <item value="ia:3" />
+            <item value="emergency:3" />
+            <item value="mcx:5" />
+            <item value="xcap:5" />
+        </string-array>
+        <string name="call_redirection_service_component_name_string">com.sonymobile.supplementallyservice.dcm/.DcmCallRedirectionService</string>
+        <string-array name="missed_incoming_call_sms_pattern_string_array" num="0" />
+        <int name="imsi_key_availability_int" value="2" />
+        <string name="imsi_key_download_url_string">https://cert.m-zone.jp/getPublicKeyForAndroid</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="true" />
+    </carrier_config>
+    <carrier_config board="lito" mcc="440" mnc="10" sku="jp_dcm">
+        <string name="gps.supl_host">dcm-supl.com</string>
+    </carrier_config>
+    <carrier_config board="lahaina" mcc="440" mnc="10" sku="jp_dcm">
+        <string name="gps.supl_host">dcm-supl.com</string>
+    </carrier_config>
+    <carrier_config mcc="440" mnc="10" sku="rakuten">
+        <string name="default_vm_number_string">1417</string>
+        <boolean name="additional_settings_call_waiting_visibility_bool" value="false" />
+        <boolean name="call_forwarding_visibility_bool" value="false" />
+        <boolean name="call_barring_visibility_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="440" mnc="11">
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="440" mnc="11" sku="rakuten">
+        <string name="default_vm_number_string">1417</string>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="additional_settings_call_waiting_visibility_bool" value="false" />
+        <boolean name="call_forwarding_visibility_bool" value="false" />
+        <boolean name="call_barring_visibility_bool" value="false" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="1" />
+        <int-array name="lte_rssnr_thresholds_int_array" num="4">
+            <item value="-3" />
+            <item value="1" />
+            <item value="5" />
+            <item value="13" />
+        </int-array>
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-128" />
+            <item value="-118" />
+            <item value="-108" />
+            <item value="-98" />
+        </int-array>
+        <int name="s_config_hysteresis_db" value="2" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+    </carrier_config>
+    <carrier_config board="lito" mcc="440" mnc="11" sku="rakuten">
+        <string name="gps.supl_host">supl.rm-n.jp</string>
+    </carrier_config>
+    <carrier_config mcc="440" mnc="20" sku="jp_sbm">
+        <string name="default_vm_number_roaming_string">+819066514170</string>
+        <boolean name="hide_preset_apn_details_bool" value="true" />
+        <int-array name="only_single_dc_allowed_int_array" num="21">
+            <item value="0" />
+            <item value="1" />
+            <item value="2" />
+            <item value="3" />
+            <item value="4" />
+            <item value="5" />
+            <item value="6" />
+            <item value="7" />
+            <item value="8" />
+            <item value="9" />
+            <item value="10" />
+            <item value="11" />
+            <item value="12" />
+            <item value="13" />
+            <item value="14" />
+            <item value="15" />
+            <item value="16" />
+            <item value="17" />
+            <item value="18" />
+            <item value="19" />
+            <item value="20" />
+        </int-array>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <int-array name="lte_rssnr_thresholds_int_array" num="4">
+            <item value="-19" />
+            <item value="-3" />
+            <item value="1" />
+            <item value="1" />
+        </int-array>
+        <int name="s_config_hysteresis_db" value="0" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="5" />
+        <int name="parameters_use_for_5g_nr_signal_bar_int" value="5" />
+        <int-array name="5g_nr_ssrsrp_thresholds_int_array" num="4">
+            <item value="-128" />
+            <item value="-124" />
+            <item value="-122" />
+            <item value="-118" />
+        </int-array>
+        <int-array name="5g_nr_sssinr_thresholds_int_array" num="4">
+            <item value="-20" />
+            <item value="-4" />
+            <item value="0" />
+            <item value="0" />
+        </int-array>
+        <boolean name="show_single_operator_row_in_choose_network_setting_bool" value="true" />
+        <boolean name="support_clir_network_default_bool" value="false" />
+        <boolean name="s_disable_data_during_network_scan" value="false" />
+        <boolean name="support_conference_call_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <boolean name="format_incoming_number_to_national_for_jp_bool" value="true" />
+        <int name="ims_dtmf_tone_delay_int" value="215" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <string name="gps.lpp_profile">0</string>
+        <string name="call_redirection_service_component_name_string">com.sonymobile.supplementallyservice.sbm/.SbmCallRedirectionService</string>
+        <string-array name="carrier_certificate_string_array" num="1">
+            <item value="8CD14DE82459630273B8D4C4F0C7C042FA0EF419C2B76A0AAD3D7A0646B015B9" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="10" mcc="440" mnc="51">
+        <string name="default_preferred_apn_name_string">uad5gn.au-net.ne.jp</string>
+    </carrier_config>
+    <carrier_config gid1="10" mcc="440" mnc="51" sku="jp_kddi">
+        <string name="gps.supl_host">location2.kddi.ne.jp</string>
+        <int name="imsi_key_availability_int" value="2" />
+        <string name="imsi_key_download_url_string">https://wificert.kddi.com/android</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="true" />
+        <string name="default_preferred_apn_name_string">uad5gn.au-net.ne.jp</string>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <long name="carrier_data_call_apn_delay_faster_long" value="1800000" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="ACTIVATION_REJECT_GGSN" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+        <string-array name="carrier_data_call_retry_config_strings" num="3">
+            <item value="default:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="mms:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="others:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+        </string-array>
+        <boolean name="hide_preset_apn_details_bool" value="true" />
+        <boolean name="s_config_disable_tether_after_failed_bool" value="true" />
+        <string name="default_vm_number_roaming_and_ims_unregistered_string">+819044441415</string>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <int-array name="disconnect_cause_play_busytone_int_array" num="8">
+            <item value="2" />
+            <item value="4" />
+            <item value="8" />
+            <item value="9" />
+            <item value="12" />
+            <item value="13" />
+            <item value="18" />
+            <item value="60" />
+        </int-array>
+        <int-array name="lte_rssnr_thresholds_int_array" num="4">
+            <item value="-5" />
+            <item value="-3" />
+            <item value="0" />
+            <item value="3" />
+        </int-array>
+        <int name="s_config_hysteresis_db" value="1" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="5" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="support_clir_network_default_bool" value="false" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="s_disable_data_during_network_scan" value="false" />
+        <boolean name="support_conference_call_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="2" />
+        <string name="config_ims_package_override_string">null</string>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <string name="gps.lpp_profile">1</string>
+        <string name="gps.use_emergency_pdn_for_emergency_supl">1</string>
+        <string name="gps.a_glonass_pos_protocol_select">0</string>
+        <boolean name="disable_charge_indication_bool" value="true" />
+        <boolean name="disable_dun_apn_while_roaming_with_preset_apn_bool" value="true" />
+        <boolean name="format_incoming_number_to_national_for_jp_bool" value="true" />
+        <string name="call_redirection_service_component_name_string">com.sonymobile.supplementallyservice.kddi/.KddiCallRedirectionService</string>
+    </carrier_config>
+    <carrier_config board="kona" gid1="10" mcc="440" mnc="51" sku="jp_kddi">
+        <int name="imsi_key_availability_int" value="0" />
+        <string name="imsi_key_download_url_string">null</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="false" />
+    </carrier_config>
+    <carrier_config board="trinket" gid1="10" mcc="440" mnc="51" sku="jp_kddi">
+        <int name="imsi_key_availability_int" value="0" />
+        <string name="imsi_key_download_url_string">null</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="false" />
+    </carrier_config>
+    <carrier_config gid1="20" mcc="440" mnc="51" sku="jp_kddi">
+        <string name="default_preferred_apn_name_string">uqmobile.jp</string>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <long name="carrier_data_call_apn_delay_faster_long" value="1800000" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="ACTIVATION_REJECT_GGSN" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+        <string-array name="carrier_data_call_retry_config_strings" num="3">
+            <item value="default:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="mms:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="others:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+        </string-array>
+        <boolean name="hide_preset_apn_details_bool" value="true" />
+        <boolean name="s_config_disable_tether_after_failed_bool" value="true" />
+        <string name="default_vm_number_roaming_and_ims_unregistered_string">+819044441415</string>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <int-array name="disconnect_cause_play_busytone_int_array" num="8">
+            <item value="2" />
+            <item value="4" />
+            <item value="8" />
+            <item value="9" />
+            <item value="12" />
+            <item value="13" />
+            <item value="18" />
+            <item value="60" />
+        </int-array>
+        <int-array name="lte_rssnr_thresholds_int_array" num="4">
+            <item value="-5" />
+            <item value="-3" />
+            <item value="0" />
+            <item value="3" />
+        </int-array>
+        <int name="s_config_hysteresis_db" value="1" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="5" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="support_clir_network_default_bool" value="false" />
+        <boolean name="s_disable_data_during_network_scan" value="false" />
+        <boolean name="support_conference_call_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <string name="config_ims_package_override_string">null</string>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <string name="gps.lpp_profile">1</string>
+        <string name="gps.use_emergency_pdn_for_emergency_supl">1</string>
+        <string name="gps.a_glonass_pos_protocol_select">0</string>
+        <boolean name="disable_charge_indication_bool" value="true" />
+        <boolean name="disable_dun_apn_while_roaming_with_preset_apn_bool" value="true" />
+        <boolean name="format_incoming_number_to_national_for_jp_bool" value="true" />
+        <string name="call_redirection_service_component_name_string">com.sonymobile.supplementallyservice.kddi/.KddiCallRedirectionService</string>
+    </carrier_config>
+    <carrier_config gid1="26" mcc="440" mnc="51" sku="jp_kddi">
+        <string name="default_preferred_apn_name_string">povo.jp</string>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <long name="carrier_data_call_apn_delay_faster_long" value="1800000" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="ACTIVATION_REJECT_GGSN" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+        <string-array name="carrier_data_call_retry_config_strings" num="3">
+            <item value="default:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="mms:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="others:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+        </string-array>
+        <boolean name="hide_preset_apn_details_bool" value="true" />
+        <boolean name="s_config_disable_tether_after_failed_bool" value="true" />
+        <string name="default_vm_number_roaming_and_ims_unregistered_string">+819044441415</string>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <int-array name="disconnect_cause_play_busytone_int_array" num="8">
+            <item value="2" />
+            <item value="4" />
+            <item value="8" />
+            <item value="9" />
+            <item value="12" />
+            <item value="13" />
+            <item value="18" />
+            <item value="60" />
+        </int-array>
+        <int-array name="lte_rssnr_thresholds_int_array" num="4">
+            <item value="-5" />
+            <item value="-3" />
+            <item value="0" />
+            <item value="3" />
+        </int-array>
+        <int name="s_config_hysteresis_db" value="1" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="5" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="support_clir_network_default_bool" value="false" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="s_disable_data_during_network_scan" value="false" />
+        <boolean name="support_conference_call_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="2" />
+        <string name="config_ims_package_override_string">null</string>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <string name="gps.lpp_profile">1</string>
+        <string name="gps.use_emergency_pdn_for_emergency_supl">1</string>
+        <string name="gps.a_glonass_pos_protocol_select">0</string>
+        <boolean name="disable_charge_indication_bool" value="true" />
+        <boolean name="disable_dun_apn_while_roaming_with_preset_apn_bool" value="true" />
+        <boolean name="format_incoming_number_to_national_for_jp_bool" value="true" />
+        <string name="call_redirection_service_component_name_string">com.sonymobile.supplementallyservice.kddi/.KddiCallRedirectionService</string>
+    </carrier_config>
+    <carrier_config mcc="440" mnc="51" sku="rakuten">
+        <string name="default_vm_number_string">1417</string>
+        <boolean name="additional_settings_call_waiting_visibility_bool" value="false" />
+        <boolean name="call_forwarding_visibility_bool" value="false" />
+        <boolean name="call_barring_visibility_bool" value="false" />
+    </carrier_config>
+    <carrier_config gid1="10" mcc="440" mnc="54" sku="jp_kddi">
+        <int name="imsi_key_availability_int" value="2" />
+        <string name="imsi_key_download_url_string">https://wificert.kddi.com/android</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="true" />
+        <string name="default_preferred_apn_name_string">uad5gn.au-net.ne.jp</string>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <long name="carrier_data_call_apn_delay_faster_long" value="1800000" />
+        <string-array name="carrier_data_call_permanent_failure_strings" num="14">
+            <item value="OPERATOR_BARRED" />
+            <item value="UNKNOWN_PDP_ADDRESS_TYPE" />
+            <item value="ACTIVATION_REJECT_GGSN" />
+            <item value="SERVICE_OPTION_NOT_SUPPORTED" />
+            <item value="SERVICE_OPTION_NOT_SUBSCRIBED" />
+            <item value="NSAPI_IN_USE" />
+            <item value="ONLY_IPV4_ALLOWED" />
+            <item value="ONLY_IPV6_ALLOWED" />
+            <item value="PROTOCOL_ERRORS" />
+            <item value="RADIO_POWER_OFF" />
+            <item value="TETHERED_CALL_ACTIVE" />
+            <item value="RADIO_NOT_AVAILABLE" />
+            <item value="UNACCEPTABLE_NETWORK_PARAMETER" />
+            <item value="SIGNAL_LOST" />
+        </string-array>
+        <string-array name="carrier_data_call_retry_config_strings" num="3">
+            <item value="default:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="mms:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+            <item value="others:max_retries=infinite,default_randomization=2000,5000,10000,20000,                 40000,80000:5000,160000:5000,320000:5000,640000:5000,1280000:5000,1800000:5000" />
+        </string-array>
+        <boolean name="hide_preset_apn_details_bool" value="true" />
+        <boolean name="s_config_disable_tether_after_failed_bool" value="true" />
+        <string name="default_vm_number_roaming_and_ims_unregistered_string">+819044441415</string>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <int-array name="disconnect_cause_play_busytone_int_array" num="8">
+            <item value="2" />
+            <item value="4" />
+            <item value="8" />
+            <item value="9" />
+            <item value="12" />
+            <item value="13" />
+            <item value="18" />
+            <item value="60" />
+        </int-array>
+        <int-array name="lte_rssnr_thresholds_int_array" num="4">
+            <item value="-5" />
+            <item value="-3" />
+            <item value="0" />
+            <item value="3" />
+        </int-array>
+        <int name="s_config_hysteresis_db" value="1" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="5" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="false" />
+        <boolean name="support_clir_network_default_bool" value="false" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="s_disable_data_during_network_scan" value="false" />
+        <boolean name="support_conference_call_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="2" />
+        <string name="config_ims_package_override_string">null</string>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="disable_charge_indication_bool" value="true" />
+        <boolean name="disable_dun_apn_while_roaming_with_preset_apn_bool" value="true" />
+        <boolean name="format_incoming_number_to_national_for_jp_bool" value="true" />
+        <string name="call_redirection_service_component_name_string">com.sonymobile.supplementallyservice.kddi/.KddiCallRedirectionService</string>
+    </carrier_config>
+    <carrier_config board="kona" gid1="10" mcc="440" mnc="54" sku="jp_kddi">
+        <int name="imsi_key_availability_int" value="0" />
+        <string name="imsi_key_download_url_string">null</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="false" />
+    </carrier_config>
+    <carrier_config board="trinket" gid1="10" mcc="440" mnc="54" sku="jp_kddi">
+        <int name="imsi_key_availability_int" value="0" />
+        <string name="imsi_key_download_url_string">null</string>
+        <boolean name="allow_metered_network_for_cert_download_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="441">
+        <boolean name="s_disable_data_during_network_scan" value="true" />
+        <boolean name="support_enhanced_call_blocking_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="true" />
+        <boolean name="show_signal_strength_in_sim_status_bool" value="false" />
+        <int name="parameters_used_for_lte_signal_bar_int" value="5" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-128" />
+            <item value="-123" />
+            <item value="-118" />
+            <item value="-108" />
+        </int-array>
+        <int-array name="lte_rssnr_thresholds_int_array" num="4">
+            <item value="-5" />
+            <item value="-3" />
+            <item value="0" />
+            <item value="0" />
+        </int-array>
+        <int name="s_config_hysteresis_db" value="0" />
+    </carrier_config>
+    <carrier_config mcc="454">
+        <int-array name="5g_nr_ssrsrp_thresholds_int_array" num="4">
+            <item value="-130" />
+            <item value="-120" />
+            <item value="-110" />
+            <item value="-100" />
+        </int-array>
+    </carrier_config>
+    <carrier_config mcc="454" mnc="00">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="02">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="03">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="04">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="05">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="06">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <boolean name="s_key_disable_wfc_in_roaming_or_airplane_mode_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="10">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="11">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="12">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="13">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="14">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="15">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <boolean name="s_key_disable_wfc_in_roaming_or_airplane_mode_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="16">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="17">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="support_ims_conference_event_package_bool" value="false" />
+        <boolean name="s_key_disable_wfc_in_roaming_or_airplane_mode_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="18">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="19">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="20">
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="454" mnc="29">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="455" mnc="01">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="455" mnc="03">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="455" mnc="04">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="455" mnc="05">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460">
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+        <int name="spn_display_condition_override_int" value="1" />
+        <int-array name="5g_nr_ssrsrp_thresholds_int_array" num="4">
+            <item value="-130" />
+            <item value="-120" />
+            <item value="-110" />
+            <item value="-100" />
+        </int-array>
+    </carrier_config>
+    <carrier_config board="lahaina" mcc="460">
+        <boolean name="volte_5g_limited_alert_dialog_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="00">
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="01">
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="02">
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="03">
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="07">
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="08">
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="09">
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="11">
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="460" mnc="19">
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="show_precise_failed_cause_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="466">
+        <int-array name="5g_nr_ssrsrp_thresholds_int_array" num="4">
+            <item value="-130" />
+            <item value="-120" />
+            <item value="-110" />
+            <item value="-100" />
+        </int-array>
+    </carrier_config>
+    <carrier_config mcc="466" mnc="01">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+    </carrier_config>
+    <carrier_config board="kona" mcc="466" mnc="01">
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="466" mnc="02">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="false" />
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+    </carrier_config>
+    <carrier_config board="kona" mcc="466" mnc="02">
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="466" mnc="05">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="call_forwarding_when_unreachable_supported_bool" value="false" />
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+    </carrier_config>
+    <carrier_config mcc="466" mnc="89">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+    </carrier_config>
+    <carrier_config mcc="466" mnc="92">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+    </carrier_config>
+    <carrier_config mcc="466" mnc="97">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="s_config_enable_side_car_for_5g_icon_bool" value="true" />
+        <string name="5g_icon_configuration_string">connected_mmwave:5g,connected:5g,not_restricted_rrc_idle:5g</string>
+    </carrier_config>
+    <carrier_config mcc="647" mnc="00">
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+    </carrier_config>
+</carrier_config_list>
