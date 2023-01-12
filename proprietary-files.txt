@@ -20,10 +20,7 @@ vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 vendor/etc/acdbdata/Sony_edo_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Sony_edo_General_cal.acdb
 vendor/etc/acdbdata/Sony_edo_Global_cal.acdb
-vendor/etc/acdbdata/Sony_edo_Handset_cal.acdb
 vendor/etc/acdbdata/Sony_edo_Hdmi_cal.acdb
-vendor/etc/acdbdata/Sony_edo_Headset_cal.acdb
-vendor/etc/acdbdata/Sony_edo_Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/workspaceFile_Sony_edo.qwsp
 vendor/lib/libacdbloader.so
@@ -101,21 +98,6 @@ vendor/lib64/libqtigef.so
 # Audio FX Modules
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
-vendor/etc/zoom_noise_reduction/znr_44k_ComboCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_FrontCHICam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_NoCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_SWideCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_TeleCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_WideCam.tbl
-vendor/etc/zoom_noise_reduction/znr_44k_defaultCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_ComboCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_FrontCHICam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_NoCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_SWideCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_TeleCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_WideCam.tbl
-vendor/etc/zoom_noise_reduction/znr_48k_defaultCam.tbl
-vendor/etc/zoom_noise_reduction/znr_parameter.xml
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdnnrwrapper.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -1535,7 +1517,6 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/etc/sensors/config/bmp380_0.json
 vendor/etc/sensors/config/kona_ak991x_0.json
 vendor/etc/sensors/config/kona_ak991x_0_somc_platform.json
-vendor/etc/sensors/config/kona_ak991x_0_somc_product.json
 vendor/etc/sensors/config/kona_amd_sw_disabled.json
 vendor/etc/sensors/config/kona_bmp380_0.json
 vendor/etc/sensors/config/kona_bu52053nvx_0.json
@@ -1547,7 +1528,6 @@ vendor/etc/sensors/config/kona_hdk_lsm6dst_1.json
 vendor/etc/sensors/config/kona_irq.json
 vendor/etc/sensors/config/kona_lps22hh_0.json
 vendor/etc/sensors/config/kona_lsm6dsm_0.json
-vendor/etc/sensors/config/kona_lsm6dsm_0_somc_product.json
 vendor/etc/sensors/config/kona_lsm6dst_0.json
 vendor/etc/sensors/config/kona_lsm6dst_1.json
 vendor/etc/sensors/config/kona_power_0.json
@@ -1706,7 +1686,6 @@ system_ext/framework/qti-telephony-common.jar
 # Thermal engine
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
-vendor/etc/thermal-engine.conf
 vendor/lib/hw/thermal.somc.so
 vendor/lib/libsomc_thermal.so
 vendor/lib/libthermal_engine.so
@@ -1879,50 +1858,6 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/vendor.somc.hardware.swiqi@1.0-impl.so
 vendor/lib64/vendor.somc.hardware.swiqi@1.0.so
 
-# Wifi firmware
-vendor/bin/cnss-daemon
-vendor/etc/wifi/bdwlan.e16
-vendor/etc/wifi/bdwlan.e17
-vendor/etc/wifi/bdwlan.elf
-
-# Other maybe needed firmware
-vendor/firmware/L-cs35l41-dsp1-spk-cali.bin
-vendor/firmware/L-cs35l41-dsp1-spk-prot.bin
-vendor/firmware/R-cs35l41-dsp1-spk-cali.bin
-vendor/firmware/R-cs35l41-dsp1-spk-prot.bin
-vendor/firmware/a615_zap.b00
-vendor/firmware/a615_zap.b01
-vendor/firmware/a615_zap.b02
-vendor/firmware/a615_zap.elf
-vendor/firmware/a615_zap.mdt
-vendor/firmware/a619_gmu.bin
-vendor/firmware/a620_zap.b00
-vendor/firmware/a620_zap.b01
-vendor/firmware/a620_zap.b02
-vendor/firmware/a620_zap.elf
-vendor/firmware/a620_zap.mdt
-vendor/firmware/a630_sqe.fw
-vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
-vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
-vendor/firmware/egista.b00
-vendor/firmware/egista.b01
-vendor/firmware/egista.b02
-vendor/firmware/egista.b03
-vendor/firmware/egista.b04
-vendor/firmware/egista.b05
-vendor/firmware/egista.b06
-vendor/firmware/egista.b07
-vendor/firmware/egista.mdt
-vendor/firmware/tzsecuredata.b00
-vendor/firmware/tzsecuredata.b01
-vendor/firmware/tzsecuredata.b02
-vendor/firmware/tzsecuredata.b03
-vendor/firmware/tzsecuredata.b04
-vendor/firmware/tzsecuredata.b05
-vendor/firmware/tzsecuredata.b06
-vendor/firmware/tzsecuredata.b07
-vendor/firmware/tzsecuredata.mdt
-
 # Modem
 vendor/bin/mlog_qmi_service
 vendor/etc/init/mlog_qmi_service.rc
@@ -1932,7 +1867,6 @@ vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/icm.conf
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/regdb.bin
-vendor/etc/wifi/wifi_txpower.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # SIM control
