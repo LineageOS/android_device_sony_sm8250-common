@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "693e5383_a1fd87fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-01-20T10:36:46Z",
+      "side": 1,
+      "message": "Confirmed to work on pdx206",
+      "revId": "a9a50c05e64a84109c3acbc97d342c8b1b198a19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
