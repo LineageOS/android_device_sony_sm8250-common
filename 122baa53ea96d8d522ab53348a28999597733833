@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "db4fd1eb_7941716c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-01-22T11:57:13Z",
+      "side": 1,
+      "message": "I would argue that this is less expensive than the original implementation. Here is the test run result:\n\nv1: 0m00.33s real     0m00.11s user     0m00.15s system\nv2: 0m00.21s real     0m00.09s user     0m00.07s system\nv3: 0m00.24s real     0m00.10s user     0m00.13s system\nv4: 0m00.18s real     0m00.06s user     0m00.07s system\n\nv1: original impl\nv2: This patch using sed\n\nv3: improved v1\n```\n#!/vendor/bin/sh\n\nLTALABEL\u003d$(cat /dev/block/bootdevice/by-name/LTALabel)\nMSIM_DEVICES\u003d\"XQ-AT42|XQ-AT52|XQ-AT72|XQ-AS42|XQ-AS52|XQ-AS62|XQ-AS72\"\n\nif grep -Eq \"${MSIM_DEVICES}\" \u003c\u003c\u003c \"${LTALABEL}\"; then\n    setprop vendor.radio.multisim.config dsds\nelse\n    setprop vendor.radio.multisim.config ss\nfi\n```\n\nv4: Improved v2\n```\n#!/vendor/bin/sh\n\nmodel\u003d`sed -e \u0027/Model: /!d\u0027 -e \u0027s/^.*Model: \\([A-Za-z0-9-]*\\).*$/\\1/\u0027 /dev/block/bootdevice/by-name/LTALabel` 2\u003e /dev/null\n\ncase \"$model\" in\n    \"XQ-AT42\" | \"XQ-AT52\" | \"XQ-AT72\" | \"XQ-AS52\" | \"XQ-AS62\" | \"XQ-AS72\" )\n        setprop vendor.radio.multisim.config dsds;;\n    \"XQ-AS42\" )\n        setprop vendor.radio.multisim.config dsds\n        setprop persist.vendor.nfc.config_file_name \"libnfc-nxp-typef.conf\"\n        ;;\n    * )\n        setprop vendor.radio.multisim.config ss;;\nesac\n\n```",
+      "parentUuid": "8910d2ed_1b66660c",
+      "range": {
+        "startLine": 7,
+        "startChar": 34,
+        "endLine": 7,
+        "endChar": 68
+      },
+      "revId": "122baa53ea96d8d522ab53348a28999597733833",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "360412ae_9b806c33",
