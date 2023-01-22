@@ -86,6 +86,30 @@
       },
       "revId": "122baa53ea96d8d522ab53348a28999597733833",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4efd7601_8ed82e73",
+        "filename": "rootdir/bin/init.qcom.msim.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-01-22T12:09:10Z",
+      "side": 1,
+      "message": "sed does not have `I` as far as I can tell from `man sed`...\nI have updated the script to match the exact case for \"Model\"",
+      "parentUuid": "cf5f8860_ec9fa393",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 152
+      },
+      "revId": "122baa53ea96d8d522ab53348a28999597733833",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
