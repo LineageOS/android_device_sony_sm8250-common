@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8910d2ed_1b66660c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-01-22T11:07:41Z",
+      "side": 1,
+      "message": "if that\u0027s what you want to achieve, can\u0027t you just store the value in a variable and keep the rest the same?",
+      "range": {
+        "startLine": 7,
+        "startChar": 34,
+        "endLine": 7,
+        "endChar": 68
+      },
+      "revId": "122baa53ea96d8d522ab53348a28999597733833",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "360412ae_9b806c33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-01-22T11:07:41Z",
+      "side": 1,
+      "message": "I am generally unsure if that reading is such an expensive operation that it makes up a portion of the boot process... and then there is the inline comments",
+      "revId": "122baa53ea96d8d522ab53348a28999597733833",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf5f8860_ec9fa393",
+        "filename": "rootdir/bin/init.qcom.msim.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-01-22T11:07:41Z",
+      "side": 1,
+      "message": "that is kinda ugly... isn\u0027t there the `I` flag for case insensitive matching?",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 152
+      },
+      "revId": "122baa53ea96d8d522ab53348a28999597733833",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
