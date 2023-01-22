@@ -18,3 +18,5 @@ persist.vendor.battery.charge           u:object_r:hal_somc_charger_prop:s0
 vendor.libthermal.currentusecase        u:object_r:somc_thermal_prop:s0
 vendor.thermal.camera.kill              u:object_r:somc_thermal_prop:s0
 vendor.thermal.display_brightness_req   u:object_r:somc_thermal_prop:s0
+
+persist.vendor.nfc.                     u:object_r:vendor_nfc_prop:s0
