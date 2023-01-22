@@ -8,3 +8,5 @@ vendor_internal_prop(demo_prop);
 vendor_internal_prop(cust_system_prop)
 vendor_internal_prop(hal_somc_charger_prop)
 vendor_internal_prop(somc_thermal_prop)
+
+vendor_public_prop(vendor_nfc_prop)
