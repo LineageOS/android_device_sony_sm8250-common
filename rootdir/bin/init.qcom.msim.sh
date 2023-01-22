@@ -8,3 +8,9 @@ case "$model" in
     * )
         setprop vendor.radio.multisim.config ss;;
 esac
+
+if [ "$model" == "" ]; then
+    setprop vendor.radio.ltalabel.model "unknown"
+else
+    setprop vendor.radio.ltalabel.model "$model"
+fi
