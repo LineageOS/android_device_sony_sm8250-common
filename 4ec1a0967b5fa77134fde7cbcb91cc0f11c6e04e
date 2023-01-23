@@ -63,6 +63,30 @@
       },
       "revId": "4ec1a0967b5fa77134fde7cbcb91cc0f11c6e04e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8af034d8_76980738",
+        "filename": "rootdir/bin/init.qcom.msim.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-01-23T03:20:44Z",
+      "side": 1,
+      "message": "please also add `-e \u0027/^$/d\u0027` at the end, to remove the empty line",
+      "parentUuid": "08ee103f_7b6c6e91",
+      "range": {
+        "startLine": 3,
+        "startChar": 15,
+        "endLine": 3,
+        "endChar": 24
+      },
+      "revId": "4ec1a0967b5fa77134fde7cbcb91cc0f11c6e04e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
