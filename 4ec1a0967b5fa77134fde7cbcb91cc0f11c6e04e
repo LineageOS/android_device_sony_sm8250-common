@@ -39,6 +39,30 @@
       },
       "revId": "4ec1a0967b5fa77134fde7cbcb91cc0f11c6e04e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08ee103f_7b6c6e91",
+        "filename": "rootdir/bin/init.qcom.msim.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-01-23T03:16:33Z",
+      "side": 1,
+      "message": "sry didn\u0027t know that. are you able to fix it and rebase the chain?",
+      "parentUuid": "93a829c7_a8459b94",
+      "range": {
+        "startLine": 3,
+        "startChar": 15,
+        "endLine": 3,
+        "endChar": 24
+      },
+      "revId": "4ec1a0967b5fa77134fde7cbcb91cc0f11c6e04e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
