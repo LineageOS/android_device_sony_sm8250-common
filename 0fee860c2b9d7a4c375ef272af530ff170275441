@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57e529db_18265d40",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-01-25T10:44:15Z",
+      "side": 1,
+      "message": "Simple implementation.\nConfirmed to work on pdx206 (XA-QS42).",
+      "revId": "0fee860c2b9d7a4c375ef272af530ff170275441",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
