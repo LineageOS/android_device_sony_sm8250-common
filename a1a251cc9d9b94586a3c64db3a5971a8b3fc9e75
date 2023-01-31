@@ -16,6 +16,24 @@
       "message": "Picked from device_oneplus_sm8250-common.",
       "revId": "a1a251cc9d9b94586a3c64db3a5971a8b3fc9e75",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e75b203_f6f5eb8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-01-31T14:23:00Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "02a8f633_01784f3d",
+      "revId": "a1a251cc9d9b94586a3c64db3a5971a8b3fc9e75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
