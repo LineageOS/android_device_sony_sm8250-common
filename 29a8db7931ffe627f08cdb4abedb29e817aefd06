@@ -16,6 +16,23 @@
       "message": "Verified on pdx206.",
       "revId": "29a8db7931ffe627f08cdb4abedb29e817aefd06",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d566d92_f48af72a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-02-01T14:03:04Z",
+      "side": 1,
+      "message": "Verified on pdx206.",
+      "revId": "29a8db7931ffe627f08cdb4abedb29e817aefd06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
