@@ -168,6 +168,7 @@
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" acdb_id="191"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO" acdb_id="35"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC" acdb_id="528"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" acdb_id="41"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="560"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC_AEC" acdb_id="529"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="41"/>
