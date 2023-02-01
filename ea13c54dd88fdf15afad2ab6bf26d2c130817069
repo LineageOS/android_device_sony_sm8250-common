@@ -52,6 +52,23 @@
       "parentUuid": "4999bd81_b253a721",
       "revId": "ea13c54dd88fdf15afad2ab6bf26d2c130817069",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d3c1ad1_3238c225",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-02-01T10:17:43Z",
+      "side": 1,
+      "message": "This property is also available in stock rom.",
+      "revId": "ea13c54dd88fdf15afad2ab6bf26d2c130817069",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
