@@ -14,9 +14,6 @@ type sony_camera_device, file_type;
 type tof_rgbcir_sysfs, fs_type, sysfs_type;
 type sysfs_camera, fs_type, sysfs_type;
 
-# LTALabel
-type lta_label, fs_type;
-
 type sysfs_sects, fs_type, sysfs_type;
 
 type sysfs_tsp, fs_type, sysfs_type;
