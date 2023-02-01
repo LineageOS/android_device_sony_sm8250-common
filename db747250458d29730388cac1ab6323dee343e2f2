@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8e5067d_30dc2274",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-02-01T08:44:59Z",
+      "side": 1,
+      "message": "Might not be ideal, stock actually chooses `voice-dmic-ef`:\n```\n02-01 16:21:39.858  1051 14788 D audio_hw_primary: select_devices: changing use case audio-record-voip input device from(0: , acdb -1) to (196: voice-dmic-ef, acdb 41)\n```",
+      "revId": "db747250458d29730388cac1ab6323dee343e2f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
