@@ -26,3 +26,5 @@ allow hal_fingerprint_default vendor_sysfs_battery_supply:file { read getattr op
 allow hal_fingerprint_default vendor_sysfs_battery_supply:dir { search };
 
 allow hal_fingerprint_default tad_socket:sock_file write;
+
+allow hal_fingerprint_default tad:unix_stream_socket { connectto };
