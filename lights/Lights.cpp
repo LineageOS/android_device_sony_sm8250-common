@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2019 The Android Open Source Project
+ * Copyright (C) 2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,114 +29,101 @@ namespace hardware {
 namespace light {
 
 #define LED_PATH(led) "/sys/class/leds/" led "/"
+#define RGB_CTRL_PATH LED_PATH("rgb")
 
 static const std::string led_paths[]{
         [RED] = LED_PATH("red"),
         [GREEN] = LED_PATH("green"),
         [BLUE] = LED_PATH("blue"),
-        [WHITE] = LED_PATH("white"),
 };
 
-static const std::string kLCDFile = "/sys/class/backlight/panel0-backlight/brightness";
-
 #define AutoHwLight(light) \
-    { .id = (int)light, .type = light, .ordinal = 0 }
+    { .id = (int32_t)light, .type = light, .ordinal = 0 }
 
 // List of supported lights
 const static std::vector<HwLight> kAvailableLights = {AutoHwLight(LightType::BATTERY),
                                                       AutoHwLight(LightType::NOTIFICATIONS)};
 
 Lights::Lights() {
-    mWhiteLed = !access((led_paths[WHITE] + "brightness").c_str(), W_OK);
+    for (int i = 0; i < NUM_LIGHTS; i++)
+        mMaxBrightness[i] = ReadIntFromFile(led_paths[i] + "max_brightness", 0xFF);
 }
 
 // AIDL methods
-ndk::ScopedAStatus Lights::setLightState(int id, const HwLightState& state) {
-    switch (id) {
-        case (int)LightType::BATTERY:
+ndk::ScopedAStatus Lights::setLightState(int32_t id, const HwLightState& state) {
+    LightType type = static_cast<LightType>(id);
+    switch (type) {
+        case LightType::BATTERY:
             mBattery = state;
-            handleSpeakerBatteryLocked();
             break;
-        case (int)LightType::NOTIFICATIONS:
+        case LightType::NOTIFICATIONS:
             mNotification = state;
-            handleSpeakerBatteryLocked();
             break;
         default:
             return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
             break;
     }
 
+    if (IsLit(mBattery.color))
+        setSpeakerLightLocked(mBattery);
+    else
+        setSpeakerLightLocked(mNotification);
+
     return ndk::ScopedAStatus::ok();
 }
 
 ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* lights) {
-    for (auto i = kAvailableLights.begin(); i != kAvailableLights.end(); i++) {
-        lights->push_back(*i);
-    }
+    for (auto& light : kAvailableLights) lights->push_back(light);
+
     return ndk::ScopedAStatus::ok();
 }
 
 // device methods
 void Lights::setSpeakerLightLocked(const HwLightState& state) {
-    uint32_t alpha, red, green, blue;
-    uint32_t blink;
-    bool rc = true;
+    uint32_t red, green, blue;
 
-    // Extract brightness from AARRGGBB
-    alpha = (state.color >> 24) & 0xFF;
+    // Extract brightness from RRGGBB
     red = (state.color >> 16) & 0xFF;
     green = (state.color >> 8) & 0xFF;
     blue = state.color & 0xFF;
 
-    // Scale RGB brightness if Alpha brightness is not 0xFF
-    if (alpha != 0xFF) {
-        red = (red * alpha) / 0xFF;
-        green = (green * alpha) / 0xFF;
-        blue = (blue * alpha) / 0xFF;
-    }
-
-    blink = (state.flashOnMs != 0 && state.flashOffMs != 0);
-
     switch (state.flashMode) {
         case FlashMode::HARDWARE:
         case FlashMode::TIMED:
-            if (mWhiteLed) {
-                rc = setLedBreath(WHITE, blink);
-            } else {
-                if (!!red) rc = setLedBreath(RED, blink);
-                if (!!green) rc &= setLedBreath(GREEN, blink);
-                if (!!blue) rc &= setLedBreath(BLUE, blink);
-            }
-            if (rc) break;
-            FALLTHROUGH_INTENDED;
+            WriteToFile(RGB_CTRL_PATH "sync_state", 1);  // CONFIGURE_TO_BLINK
+            setLedBlink(RED, red, state.flashOnMs, state.flashOffMs);
+            setLedBlink(GREEN, green, state.flashOnMs, state.flashOffMs);
+            setLedBlink(BLUE, blue, state.flashOnMs, state.flashOffMs);
+            WriteToFile(RGB_CTRL_PATH "start_blink", 1);
+            break;
         case FlashMode::NONE:
         default:
-            if (mWhiteLed) {
-                rc = setLedBrightness(WHITE, RgbaToBrightness(state.color));
-            } else {
-                rc = setLedBrightness(RED, red);
-                rc &= setLedBrightness(GREEN, green);
-                rc &= setLedBrightness(BLUE, blue);
-            }
+            WriteToFile(RGB_CTRL_PATH "sync_state", 0);  // NOT_BLINK
+            setLedBrightness(RED, red);
+            setLedBrightness(GREEN, green);
+            setLedBrightness(BLUE, blue);
             break;
     }
 
     return;
 }
 
-void Lights::handleSpeakerBatteryLocked() {
-    if (IsLit(mBattery.color))
-        return setSpeakerLightLocked(mBattery);
-    else
-        return setSpeakerLightLocked(mNotification);
+uint32_t Lights::getActualBrightness(led_type led, uint32_t value) {
+    return value * mMaxBrightness[led] / 0xFF;
 }
 
-bool Lights::setLedBreath(led_type led, uint32_t value) {
-    return WriteToFile(led_paths[led] + "breath", value);
+bool Lights::setLedBlink(led_type led, uint32_t value, uint32_t onMs, uint32_t offMs) {
+    bool ret = true;
+    ret = WriteStringToFile(std::to_string(getActualBrightness(led, value)) + ",0",
+                            led_paths[led] + "lut_pwm");
+    ret &= WriteToFile(led_paths[led] + "step_duration", 0);
+    ret &= WriteToFile(led_paths[led] + "pause_lo_multi", offMs);
+    ret &= WriteToFile(led_paths[led] + "pause_hi_multi", onMs);
+    return ret;
 }
 
 bool Lights::setLedBrightness(led_type led, uint32_t value) {
-    return WriteToFile(led_paths[led] + "brightness", value);
+    return WriteToFile(led_paths[led] + "brightness", getActualBrightness(led, value));
 }
 
 // Utils
@@ -143,23 +131,13 @@ bool Lights::IsLit(uint32_t color) {
     return color & 0x00ffffff;
 }
 
-uint32_t Lights::RgbaToBrightness(uint32_t color) {
-    // Extract brightness from AARRGGBB.
-    uint32_t alpha = (color >> 24) & 0xFF;
+uint32_t Lights::ReadIntFromFile(const std::string& path, uint32_t defaultValue) {
+    std::string buf;
 
-    // Retrieve each of the RGB colors
-    uint32_t red = (color >> 16) & 0xFF;
-    uint32_t green = (color >> 8) & 0xFF;
-    uint32_t blue = color & 0xFF;
-
-    // Scale RGB colors if a brightness has been applied by the user
-    if (alpha != 0xFF) {
-        red = red * alpha / 0xFF;
-        green = green * alpha / 0xFF;
-        blue = blue * alpha / 0xFF;
+    if (::android::base::ReadFileToString(path, &buf)) {
+        return std::stoi(buf);
     }
-
-    return (77 * red + 150 * green + 29 * blue) >> 8;
+    return defaultValue;
 }
 
 // Write value to path and close file.
