@@ -27,7 +27,12 @@ enum led_type {
     RED,
     GREEN,
     BLUE,
-    WHITE,
+    NUM_LIGHTS,
+};
+
+struct LightParam {
+    int max_single_brightness;
+    int max_mixed_brightness;
 };
 
 class Lights : public BnLights {
@@ -41,16 +46,19 @@ class Lights : public BnLights {
     void setSpeakerLightLocked(const HwLightState& state);
     void handleSpeakerBatteryLocked();
 
-    bool setLedBreath(led_type led, uint32_t value);
-    bool setLedBrightness(led_type led, uint32_t value);
+    int getActualBrightness(led_type led, int br, bool is_mixed);
+    bool setLedBlink(led_type led, int br, int onMS, int offMS, bool is_mixed);
+    bool setLedBrightness(led_type led, uint32_t value, bool is_mixed);
 
     bool IsLit(uint32_t color);
-    uint32_t RgbaToBrightness(uint32_t color);
+    uint32_t ReadIntFromFile(const std::string& path, uint32_t defaultValue);
     bool WriteToFile(const std::string& path, uint32_t content);
 
     bool mWhiteLed;
     HwLightState mNotification;
     HwLightState mBattery;
+
+    struct LightParam mLightParams[NUM_LIGHTS];
 };
 
 }  // namespace light

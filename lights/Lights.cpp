@@ -28,15 +28,13 @@ namespace hardware {
 namespace light {
 
 #define LED_PATH(led) "/sys/class/leds/" led "/"
+#define RGB_CTRL_PATH LED_PATH("rgb")
 
 static const std::string led_paths[]{
         [RED] = LED_PATH("red"),
         [GREEN] = LED_PATH("green"),
         [BLUE] = LED_PATH("blue"),
-        [WHITE] = LED_PATH("white"),
 };
-
-static const std::string kLCDFile = "/sys/class/backlight/panel0-backlight/brightness";
 
 #define AutoHwLight(light) \
     { .id = (int)light, .type = light, .ordinal = 0 }
@@ -46,7 +44,12 @@ const static std::vector<HwLight> kAvailableLights = {AutoHwLight(LightType::BAT
                                                       AutoHwLight(LightType::NOTIFICATIONS)};
 
 Lights::Lights() {
-    mWhiteLed = !access((led_paths[WHITE] + "brightness").c_str(), W_OK);
+    for (int i = 0; i < NUM_LIGHTS; i++) {
+        mLightParams[i].max_single_brightness =
+                ReadIntFromFile(led_paths[i] + "max_single_brightness", 0xFF);
+        mLightParams[i].max_mixed_brightness =
+                ReadIntFromFile(led_paths[i] + "max_mixed_brightness", 0xFF);
+    }
 }
 
 // AIDL methods
@@ -75,54 +78,6 @@ ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* lights) {
     return ndk::ScopedAStatus::ok();
 }
 
-// device methods
-void Lights::setSpeakerLightLocked(const HwLightState& state) {
-    uint32_t alpha, red, green, blue;
-    uint32_t blink;
-    bool rc = true;
-
-    // Extract brightness from AARRGGBB
-    alpha = (state.color >> 24) & 0xFF;
-    red = (state.color >> 16) & 0xFF;
-    green = (state.color >> 8) & 0xFF;
-    blue = state.color & 0xFF;
-
-    // Scale RGB brightness if Alpha brightness is not 0xFF
-    if (alpha != 0xFF) {
-        red = (red * alpha) / 0xFF;
-        green = (green * alpha) / 0xFF;
-        blue = (blue * alpha) / 0xFF;
-    }
-
-    blink = (state.flashOnMs != 0 && state.flashOffMs != 0);
-
-    switch (state.flashMode) {
-        case FlashMode::HARDWARE:
-        case FlashMode::TIMED:
-            if (mWhiteLed) {
-                rc = setLedBreath(WHITE, blink);
-            } else {
-                if (!!red) rc = setLedBreath(RED, blink);
-                if (!!green) rc &= setLedBreath(GREEN, blink);
-                if (!!blue) rc &= setLedBreath(BLUE, blink);
-            }
-            if (rc) break;
-            FALLTHROUGH_INTENDED;
-        case FlashMode::NONE:
-        default:
-            if (mWhiteLed) {
-                rc = setLedBrightness(WHITE, RgbaToBrightness(state.color));
-            } else {
-                rc = setLedBrightness(RED, red);
-                rc &= setLedBrightness(GREEN, green);
-                rc &= setLedBrightness(BLUE, blue);
-            }
-            break;
-    }
-
-    return;
-}
-
 void Lights::handleSpeakerBatteryLocked() {
     if (IsLit(mBattery.color))
         return setSpeakerLightLocked(mBattery);
@@ -130,12 +85,57 @@ void Lights::handleSpeakerBatteryLocked() {
         return setSpeakerLightLocked(mNotification);
 }
 
-bool Lights::setLedBreath(led_type led, uint32_t value) {
-    return WriteToFile(led_paths[led] + "breath", value);
+// device methods
+void Lights::setSpeakerLightLocked(const HwLightState& state) {
+    uint32_t red, green, blue;
+
+    // Extract brightness from AARRGGBB
+    red = (state.color >> 16) & 0xFF;
+    green = (state.color >> 8) & 0xFF;
+    blue = state.color & 0xFF;
+
+    // Get the number of lit LED
+    bool mixed_led = ((int)(red != 0) + (int)(green != 0) + (int)(blue != 0)) > 1;
+
+    switch (state.flashMode) {
+        case FlashMode::HARDWARE:
+        case FlashMode::TIMED:
+            WriteToFile(RGB_CTRL_PATH "sync_state", 1);
+            setLedBlink(RED, red, state.flashOnMs, state.flashOffMs, mixed_led);
+            setLedBlink(GREEN, green, state.flashOnMs, state.flashOffMs, mixed_led);
+            setLedBlink(BLUE, blue, state.flashOnMs, state.flashOffMs, mixed_led);
+            WriteToFile(RGB_CTRL_PATH "start_blink", 1);
+            break;
+        case FlashMode::NONE:
+        default:
+            WriteToFile(RGB_CTRL_PATH "sync_state", 0);
+            setLedBrightness(RED, red, mixed_led);
+            setLedBrightness(GREEN, green, mixed_led);
+            setLedBrightness(BLUE, blue, mixed_led);
+            break;
+    }
+
+    return;
 }
 
-bool Lights::setLedBrightness(led_type led, uint32_t value) {
-    return WriteToFile(led_paths[led] + "brightness", value);
+int Lights::getActualBrightness(led_type led, int br, bool is_mixed) {
+    int max_br = is_mixed ? mLightParams[led].max_mixed_brightness
+                          : mLightParams[led].max_single_brightness;
+    return br * max_br / 0xFF;
+}
+
+bool Lights::setLedBlink(led_type led, int br, int onMS, int offMS, bool is_mixed) {
+    bool ret;
+    ret = WriteStringToFile(std::to_string(getActualBrightness(led, br, is_mixed)) + ",0",
+                            led_paths[led] + "lut_pwm");
+    ret &= WriteToFile(led_paths[led] + "step_duration", 0);
+    ret &= WriteToFile(led_paths[led] + "pause_lo_multi", offMS);
+    ret &= WriteToFile(led_paths[led] + "pause_hi_multi", onMS);
+    return ret;
+}
+
+bool Lights::setLedBrightness(led_type led, uint32_t value, bool is_mixed) {
+    return WriteToFile(led_paths[led] + "brightness", getActualBrightness(led, value, is_mixed));
 }
 
 // Utils
@@ -143,23 +143,13 @@ bool Lights::IsLit(uint32_t color) {
     return color & 0x00ffffff;
 }
 
-uint32_t Lights::RgbaToBrightness(uint32_t color) {
-    // Extract brightness from AARRGGBB.
-    uint32_t alpha = (color >> 24) & 0xFF;
+uint32_t Lights::ReadIntFromFile(const std::string& path, uint32_t defaultValue) {
+    std::string buf;
 
-    // Retrieve each of the RGB colors
-    uint32_t red = (color >> 16) & 0xFF;
-    uint32_t green = (color >> 8) & 0xFF;
-    uint32_t blue = color & 0xFF;
-
-    // Scale RGB colors if a brightness has been applied by the user
-    if (alpha != 0xFF) {
-        red = red * alpha / 0xFF;
-        green = green * alpha / 0xFF;
-        blue = blue * alpha / 0xFF;
+    if (::android::base::ReadFileToString(path, &buf)) {
+        return std::stoi(buf);
     }
-
-    return (77 * red + 150 * green + 29 * blue) >> 8;
+    return defaultValue;
 }
 
 // Write value to path and close file.
