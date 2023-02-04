@@ -16,6 +16,24 @@
       "message": "Tested with \u0027Led Color Tester\u0027 and \u0027Light Manager 2\u0027.\nold code: color is accurate but not blinking.\nnew code: blinking but color is not accurate.",
       "revId": "e4c9412d5aab506054bb424edc6952d0b44bebcd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc30c0dc_e002ebf7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-02-04T04:16:42Z",
+      "side": 1,
+      "message": "eh you are right. I will take a closer look at how the brightness work.",
+      "parentUuid": "00784b3e_3d2ac436",
+      "revId": "e4c9412d5aab506054bb424edc6952d0b44bebcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
