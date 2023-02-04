@@ -34,6 +34,24 @@
       "parentUuid": "00784b3e_3d2ac436",
       "revId": "e4c9412d5aab506054bb424edc6952d0b44bebcd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "987f4a71_d6b852ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-02-04T04:30:56Z",
+      "side": 1,
+      "message": "Use max_brightness instead of max_single_brightness \u0026 max_mixed_brightness.\nThis seems to solve the problem. Verified on pdx206.",
+      "parentUuid": "cc30c0dc_e002ebf7",
+      "revId": "e4c9412d5aab506054bb424edc6952d0b44bebcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
