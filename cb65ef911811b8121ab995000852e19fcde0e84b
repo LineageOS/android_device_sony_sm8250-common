@@ -16,6 +16,24 @@
       "message": "Fixes Beidou GPS navigation for me.",
       "revId": "cb65ef911811b8121ab995000852e19fcde0e84b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1feb524d_a94ecfcf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-02-07T23:41:46Z",
+      "side": 1,
+      "message": "Beidou GPS could not be tested, but GNSS continues to work fine.",
+      "parentUuid": "a72d6306_6473845a",
+      "revId": "cb65ef911811b8121ab995000852e19fcde0e84b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
