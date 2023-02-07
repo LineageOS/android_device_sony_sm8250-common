@@ -926,11 +926,17 @@ vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
+vendor/etc/flp.conf
+vendor/etc/gps.conf
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
+vendor/etc/izat.conf
+vendor/etc/lowi.conf
+vendor/etc/sap.conf
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
+vendor/etc/xtwifi.conf
 vendor/lib/libcdfw_remote_api.so
 vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
