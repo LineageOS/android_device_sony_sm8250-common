@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c4df36b_459de9fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29356
+      },
+      "writtenOn": "2023-02-15T15:29:15Z",
+      "side": 1,
+      "message": "calibrated and tested on pdx206, GSMArena says pdx203 has the same peak brightness",
+      "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
