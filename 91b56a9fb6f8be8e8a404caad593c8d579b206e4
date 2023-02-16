@@ -18,6 +18,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dff0fe42_0a3efdbe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-02-16T03:36:33Z",
+      "side": 1,
+      "message": "I also find that those arrays are not the same as stock (in FrameworkRes-PDX203-Overlay.apk in the oem partition). Maybe try using that?",
+      "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6c98c93d_681a8117",
