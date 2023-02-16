@@ -310,21 +310,25 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
-    <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
+    <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
          (1-based arrays)
-         Point 1: (0, value[1]): lux <= 0
-         Point 2: (level[1], value[2]): 0 < lux <= level[1]
-         Point 3: (level[2], value[3]): level[2] < lux <= level[3]
+
+         Point 1:            (0, value[1]):             lux <= 0
+         Point 2:     (level[1], value[2]):  0        < lux <= level[1]
+         Point 3:     (level[2], value[3]):  level[2] < lux <= level[3]
          ...
-         Point N+1: (level[N], value[N+1]): level[N] < lux
+         Point N+1: (level[N], value[N+1]):  level[N] < lux
+
          The control points must be strictly increasing.  Each control point
          corresponds to an entry in the brightness backlight values arrays.
-         For example, if LUX == level[1] (first element of the levels array)
+         For example, if lux == level[1] (first element of the levels array)
          then the brightness will be determined by value[2] (second element
          of the brightness values array).
+
          Spline interpolation is used to determine the auto-brightness
-         backlight values for LUX levels between these control points.
+         backlight values for lux levels between these control points.
+
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
@@ -347,11 +351,44 @@
         <item>50000</item>
     </integer-array>
 
-    <!-- Array of output values for LCD backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-         The brightness values must be between 0 and 255 and be non-decreasing.
-         This must be overridden in platform specific overlays -->
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+         in the config_autoBrightnessLevels array. The display brightness is defined as the measured
+         brightness of an all-white image.
+
+         If this is defined then:
+            - config_autoBrightnessLcdBacklightValues should not be defined
+            - config_screenBrightnessNits must be defined
+            - config_screenBrightnessBacklight must be defined
+
+         This array should have size one greater than the size of the config_autoBrightnessLevels
+         array. The brightness values must be non-negative and non-decreasing. This must be
+         overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+        <item>33</item>
+        <item>39</item>
+        <item>87</item>
+        <item>102</item>
+        <item>120</item>
+        <item>129</item>
+        <item>141</item>
+        <item>180</item>
+        <item>309</item>
+        <item>438</item>
+        <item>540</item>
+        <item>648</item>
+        <item>726</item>
+        <item>765</item>
+    </integer-array>
+
+    <!-- An array describing the screen's backlight values corresponding to the brightness
+         values in the config_screenBrightnessNits array.
+
+         This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
         <item>0</item>
         <item>1</item>
@@ -374,49 +411,34 @@
         <item>255</item>
     </integer-array>
 
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+         should be measured with an all white image while the display is in the fully on state.
+         Note that this value should *not* reflect the maximum brightness value for any high
+         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+
+         This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>0.0</item>
-        <item>5.0</item>
-        <item>37.8</item>
-        <item>72.93</item>
-        <item>108.07</item>
-        <item>143.21</item>
-        <item>178.35</item>
-        <item>213.48</item>
-        <item>248.62</item>
-        <item>283.76</item>
-        <item>318.9</item>
-        <item>354.04</item>
-        <item>389.17</item>
-        <item>424.31</item>
-        <item>459.45</item>
-        <item>494.59</item>
-        <item>529.72</item>
-        <item>564.86</item>
-        <item>600.0</item>
+        <item>2.0</item>
+        <item>20.63</item>
+        <item>40.59</item>
+        <item>60.55</item>
+        <item>80.51</item>
+        <item>100.47</item>
+        <item>120.43</item>
+        <item>140.39</item>
+        <item>160.35</item>
+        <item>180.31</item>
+        <item>200.28</item>
+        <item>220.24</item>
+        <item>240.2</item>
+        <item>260.16</item>
+        <item>280.12</item>
+        <item>300.08</item>
+        <item>320.04</item>
+        <item>340.0</item>
     </array>
-
-    <integer-array name="config_autoBrightnessDisplayValuesNits">
-        <item>2</item>
-        <item>2</item>
-        <item>7</item>
-        <item>13</item>
-        <item>27</item>
-        <item>37</item>
-        <item>43</item>
-        <item>97</item>
-        <item>113</item>
-        <item>133</item>
-        <item>143</item>
-        <item>157</item>
-        <item>200</item>
-        <item>343</item>
-        <item>487</item>
-        <item>600</item>
-        <item>720</item>
-        <item>807</item>
-        <item>850</item>
-    </integer-array>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
@@ -479,14 +501,29 @@
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
-    <!-- Minimum color temperature, in Kelvin, supported by Night display. -->
-    <integer name="config_nightDisplayColorTemperatureMin">4500</integer>
+    <string-array name="config_nightDisplayColorTemperatureCoefficients">
+        <item>0.0000000000</item>
+        <item>0.0000000000</item>
+        <item>1.0000000000</item>
+        <item>0.0000000000</item>
+        <item>0.0001636364</item>
+        <item>0.3352000000</item>
+        <item>0.0000000000</item>
+        <item>0.0003496503</item>
+        <item>-0.4376923077</item>
+    </string-array>
 
-    <!-- Default color temperature, in Kelvin, to tint the screen when Night display is
-         activated. -->
-    <integer name="config_nightDisplayColorTemperatureDefault">5200</integer>
+    <string-array name="config_nightDisplayColorTemperatureCoefficientsNative">
+        <item>0.0000000000</item>
+        <item>0.0000000000</item>
+        <item>1.0000000000</item>
+        <item>0.0000000000</item>
+        <item>0.0001636364</item>
+        <item>0.3352000000</item>
+        <item>0.0000000000</item>
+        <item>0.0003496503</item>
+        <item>-0.4376923077</item>
+    </string-array>
 
-    <!-- Maximum color temperature, in Kelvin, supported by Night display. -->
-    <integer name="config_nightDisplayColorTemperatureMax">6500</integer>
 </resources>
 
