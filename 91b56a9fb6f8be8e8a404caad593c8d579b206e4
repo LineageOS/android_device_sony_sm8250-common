@@ -16,6 +16,40 @@
       "message": "calibrated and tested on pdx206, GSMArena says pdx203 has the same peak brightness",
       "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c98c93d_681a8117",
+        "filename": "overlay/SonyEdoFrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 342,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-02-16T01:36:40Z",
+      "side": 1,
+      "message": "The light sensor in our device does have a max value of 50000. Not sure if 10000 is appropriate for max brightness?",
+      "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8d627d7d_88704317",
+        "filename": "overlay/SonyEdoFrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 389,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-02-16T01:36:40Z",
+      "side": 1,
+      "message": "you only provide three values here, and depend on interpolation to make nits in the middle work?",
+      "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
