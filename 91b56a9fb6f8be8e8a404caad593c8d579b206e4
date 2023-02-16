@@ -72,6 +72,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1fb6ef03_7770c250",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-02-16T04:39:26Z",
+      "side": 1,
+      "message": "Are you able to test that patch and see if auto brightness behave well? I would prefer stock config than this. That said, if that does not work well, we can merge this as an alternative.",
+      "parentUuid": "4bdffb84_0e2bba2f",
+      "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6c98c93d_681a8117",
         "filename": "overlay/SonyEdoFrameworksResCommon/res/values/config.xml",
         "patchSetId": 1
@@ -101,6 +119,24 @@
       "side": 1,
       "message": "In this mapping 5000 lux will map to 100% brightness for our devices. Extended range doesn\u0027t take effect in auto brightness, just copied as-is.",
       "parentUuid": "6c98c93d_681a8117",
+      "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d311988f_bbdabc58",
+        "filename": "overlay/SonyEdoFrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 342,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-02-16T04:39:26Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "105ee7e4_21d34f69",
       "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -136,6 +172,24 @@
       "side": 1,
       "message": "Observed linear response except extreme low brightness. Interpolation should work fine.",
       "parentUuid": "8d627d7d_88704317",
+      "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf8a4170_fb0ee63c",
+        "filename": "overlay/SonyEdoFrameworksResCommon/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 389,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-02-16T04:39:26Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "89f1c745_3852609a",
       "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
