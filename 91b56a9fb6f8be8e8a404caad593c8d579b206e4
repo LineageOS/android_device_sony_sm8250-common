@@ -35,6 +35,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1379c71e_eabe416b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-02-16T03:48:10Z",
+      "side": 1,
+      "message": "Are you able to check https://review.lineageos.org/c/LineageOS/android_device_sony_sm8250-common/+/349206? Those values are from pdx203, and is the same as pdx206.",
+      "revId": "91b56a9fb6f8be8e8a404caad593c8d579b206e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6c98c93d_681a8117",
