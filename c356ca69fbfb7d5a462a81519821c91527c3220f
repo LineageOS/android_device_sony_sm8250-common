@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c6057c7_31460b40",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-02-24T09:07:24Z",
+      "side": 1,
+      "message": "Verified with dumped elabel of XQ-AS42,XQ-AS52,XQ-AS62,XQ-AS72,XQ-AT42,XQ-AT51,XQ-AT52,XQ-AT72.",
+      "revId": "c356ca69fbfb7d5a462a81519821c91527c3220f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
