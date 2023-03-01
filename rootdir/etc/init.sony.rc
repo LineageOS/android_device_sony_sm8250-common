@@ -9,6 +9,10 @@ service msim_sh /vendor/bin/init.qcom.msim.sh
     group root
     oneshot
 
+on boot
+    # Enable smart charging
+    write /sys/class/power_supply/battery_ext/smart_charging_activation 1
+
 on post-fs
     # radio
     exec_start msim_sh
