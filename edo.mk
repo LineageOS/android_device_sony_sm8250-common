@@ -387,7 +387,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor \
     android.hardware.nfc@1.2.vendor \
-    NfcNci \
     SecureElement \
     Tag
 
