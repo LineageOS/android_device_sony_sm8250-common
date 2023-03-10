@@ -16,6 +16,24 @@
       "message": "The smart charging feature must be enabled for this health HAL to work on pdx203/206.\nTo do that, the following code need to be added to init.sony.rc or similar:\n\non boot\n    # Enable smart charging\n    write /sys/class/power_supply/battery_ext/smart_charging_activation 1\n",
       "revId": "d951b10fbad12bcdc85b5c6d9233d823530f8490",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "deb7b947_f5de0ba2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-03-10T05:13:06Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_kernel_sony_sm8250/+/350829\nI actually want to remove this attr",
+      "parentUuid": "443b50f5_79ce0736",
+      "revId": "d951b10fbad12bcdc85b5c6d9233d823530f8490",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
