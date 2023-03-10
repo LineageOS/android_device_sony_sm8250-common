@@ -88,6 +88,24 @@
       "parentUuid": "2bd9df32_ff84bd74",
       "revId": "d951b10fbad12bcdc85b5c6d9233d823530f8490",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eabef66b_bdc57e29",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-03-10T05:54:12Z",
+      "side": 1,
+      "message": "Thanks. Btw, battery health is a feature I was hoping for!",
+      "parentUuid": "2bd9df32_ff84bd74",
+      "revId": "d951b10fbad12bcdc85b5c6d9233d823530f8490",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
