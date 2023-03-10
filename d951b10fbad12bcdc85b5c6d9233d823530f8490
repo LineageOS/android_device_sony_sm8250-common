@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "443b50f5_79ce0736",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-03-10T05:09:14Z",
+      "side": 1,
+      "message": "The smart charging feature must be enabled for this health HAL to work on pdx203/206.\nTo do that, the following code need to be added to init.sony.rc or similar:\n\non boot\n    # Enable smart charging\n    write /sys/class/power_supply/battery_ext/smart_charging_activation 1\n",
+      "revId": "d951b10fbad12bcdc85b5c6d9233d823530f8490",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
