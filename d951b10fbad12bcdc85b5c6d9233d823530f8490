@@ -52,6 +52,24 @@
       "parentUuid": "deb7b947_f5de0ba2",
       "revId": "d951b10fbad12bcdc85b5c6d9233d823530f8490",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2bd9df32_ff84bd74",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-03-10T05:43:03Z",
+      "side": 1,
+      "message": "I wouldn\u0027t call it feature since `smart_charging_activation` actually does nothing than allowing write to `smart_charging_interruption`. But OK, I will write 1 to it instead.",
+      "parentUuid": "b06910b9_c8a2bb92",
+      "revId": "d951b10fbad12bcdc85b5c6d9233d823530f8490",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
