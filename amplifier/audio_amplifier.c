@@ -43,6 +43,8 @@
 
 #define UNUSED __attribute__((unused))
 
+#define GET_SPEAKER_CALIBRATIONS_FROM_TA 1
+
 /* Amplifier structures definition */
 typedef struct amp_device {
   amplifier_device_t amp_dev;
@@ -202,7 +204,7 @@ static int get_ta_array(uint32_t unit, void *arr, bool reverse) {
     goto end;
 
   /* Invert the array, because TA has the values inverted... */
-  for (i = 0; i <= ta_sz / 2; i++) {
+  for (i = 0; i < ta_sz / 2; i++) {
     tmp = array[i];
     array[i] = array[ta_sz - i - 1];
     array[ta_sz - i - 1] = tmp;
@@ -1597,7 +1599,16 @@ static int amp_calib(void *adev) {
                      true);
   if (ret)
     return -EINVAL;
-#endif
+
+  handle.spkl.cal_ok = true;
+  handle.spkr.cal_ok = true;
+
+  int spkl_empty = 0;
+  for (int i = 0; i < 4; i ++) {
+    spkl_empty |= handle.spkl.cal_r[i];
+  }
+  handle.is_stereo = spkl_empty != 0;
+#else
 
   /* Do we want to load or calibrate? */
   ret = cirrus_cal_from_file(&handle);
@@ -1608,6 +1619,8 @@ static int amp_calib(void *adev) {
     handle.spkl.cal_ok = false;
     handle.spkr.cal_ok = false;
   }
+
+#endif
 
   pthread_mutex_init(&handle.fb_prot_mutex, NULL);
 
