@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "289096e6_f630a8ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-03-20T12:44:18Z",
+      "side": 1,
+      "message": "Verified on pdx206. Also need to update vendor.",
+      "revId": "eb8d7768a2a30268f4deb58e848f994f4f624ce3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
