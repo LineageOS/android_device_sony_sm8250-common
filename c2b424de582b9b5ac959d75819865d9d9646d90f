@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e48b6e3b_3e69e516",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-03-30T00:08:36Z",
+      "side": 1,
+      "message": "Please fix commit message: sm8350-common -\u003e sm8250-common",
+      "revId": "c2b424de582b9b5ac959d75819865d9d9646d90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
