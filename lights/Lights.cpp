@@ -117,8 +117,8 @@ bool Lights::setLedBlink(led_type led, uint32_t value, uint32_t onMs, uint32_t o
     ret = WriteStringToFile(std::to_string(getActualBrightness(led, value)) + ",0",
                             led_paths[led] + "lut_pwm");
     ret &= WriteToFile(led_paths[led] + "step_duration", 0);
-    ret &= WriteToFile(led_paths[led] + "pause_lo_multi", offMs);
-    ret &= WriteToFile(led_paths[led] + "pause_hi_multi", onMs);
+    ret &= WriteToFile(led_paths[led] + "pause_hi_multi", offMs);
+    ret &= WriteToFile(led_paths[led] + "pause_lo_multi", onMs);
     return ret;
 }
 
