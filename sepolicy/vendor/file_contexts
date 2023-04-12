@@ -5,6 +5,7 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/iddd                   u:object_r:idd_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/keyprovd               u:object_r:keyprovd_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/sony_ext_uim_ctrl      u:object_r:ext_uim_ctrl_exec:s0
+/(vendor|system/vendor|odm|vendor/odm)/bin/chg-pwr-service        u:object_r:chg_pwr_service_exec:s0
 
 # Data files
 /mnt/rca                                  u:object_r:idd_rca_dir:s0
@@ -55,6 +56,7 @@
 # Sys files
 /sys/devices/virtual/sec/tsp(/.*)?                              u:object_r:sysfs_tsp:s0
 /sys/devices/dsi_panel_driver(/.*)?                             u:object_r:sysfs_dp:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/somc_[a-z0-9_]+       u:object_r:vendor_sysfs_smb_device:s0
 
 # Inputs
 /sys/devices/virtual/input/input[0-9]+/als_Itime          u:object_r:sysfs_camera:s0

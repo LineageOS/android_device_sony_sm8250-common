@@ -1,0 +1,18 @@
+type chg_pwr_service, domain;
+type chg_pwr_service_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(chg_pwr_service);
+
+wakelock_use(chg_pwr_service)
+
+allow chg_pwr_service kmsg_device:chr_file { write getattr lock append map open };
+allow chg_pwr_service self:netlink_kobject_uevent_socket { read create bind };
+allow chg_pwr_service vendor_sysfs_battery_supply:dir { search };
+allow chg_pwr_service vendor_sysfs_battery_supply:file rw_file_perms;
+allow chg_pwr_service vendor_sysfs_smb_device:file rw_file_perms;
+allow chg_pwr_service vendor_sysfs_usbpd_device:dir { search };
+allow chg_pwr_service vendor_sysfs_usbpd_device:file rw_file_perms;
+allow chg_pwr_service vendor_sysfs_usb_supply:dir { search };
+allow chg_pwr_service vendor_sysfs_usb_supply:file rw_file_perms;
+allow chg_pwr_service sysfs_wireless_supply:dir { search };
+allow chg_pwr_service sysfs_wireless_supply:file rw_file_perms;

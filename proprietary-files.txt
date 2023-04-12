@@ -564,6 +564,7 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
+vendor/bin/chg-pwr-service
 vendor/bin/hw/vendor.semc.hardware.charger@1.0-service
 vendor/etc/init/vendor.semc.hardware.charger@1.0-service.rc
 
