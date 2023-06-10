@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "247bbb63_b07c7ca1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-06-10T06:13:12Z",
+      "side": 1,
+      "message": "It\u0027s time to merge.",
+      "revId": "e6ed1b2fc06adc56e3400f1c2e36763a29f112a5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
