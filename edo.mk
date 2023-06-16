@@ -459,10 +459,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/sony
 
-# Set fdsan to the warn_once severity level
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.fdsan=warn_once
-
 # Shim
 PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor \
