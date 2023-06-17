@@ -16,6 +16,23 @@
       "message": "breaks a2dp hardware offload",
       "revId": "d2f476baf4cedd5ef58d294ada6c431b1cdd69d3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d3e3021_1951d88f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-06-17T03:38:58Z",
+      "side": 1,
+      "message": "Confirmed to break a2dp offload",
+      "revId": "d2f476baf4cedd5ef58d294ada6c431b1cdd69d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
