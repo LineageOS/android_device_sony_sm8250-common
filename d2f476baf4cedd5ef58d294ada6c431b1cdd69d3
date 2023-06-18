@@ -50,6 +50,24 @@
       "message": "Currently a2dp offload is broken in pdx206 as follows.\nAs a result, the BT headset is completely inaudible.\nThis commit disable a2dp offload, but the BT headset becomes audible.\n\nDEBUG   : failed to read process info: failed to open /proc/1047\nDEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***\nDEBUG   : LineageOS Version: \u002720.0-20230618-UNOFFICIAL-pdx206\u0027\nDEBUG   : Build fingerprint: \u0027Sony/XQ-AS72/XQ-AS72:12/58.2.A.10.126/058002A010012603718185433:user/release-keys\u0027\nDEBUG   : Revision: \u00270\u0027\nDEBUG   : ABI: \u0027arm\u0027\nDEBUG   : Timestamp: 2023-06-18 10:29:42.142136551+0900\nDEBUG   : Process uptime: 0s\nDEBUG   : Cmdline: /vendor/bin/hw/android.hardware.audio.service\nDEBUG   : pid: 1047, tid: 5818, name: writer  \u003e\u003e\u003e /vendor/bin/hw/android.hardware.audio.service \u003c\u003c\u003c\nDEBUG   : uid: 1041\nDEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000017d\nDEBUG   : Cause: null pointer dereference\nDEBUG   :     r0  00000001  r1  f4b45a61  r2  f6fb1a14  r3  ef076618\nDEBUG   :     r4  f2db7020  r5  f4b45a61  r6  f77f14c0  r7  f4b4ef3c\nDEBUG   :     r8  00000001  r9  f5260ce4  r10 f5265102  r11 f4d42c08\nDEBUG   :     ip  f4b4dddc  sp  ef076af8  lr  f4b48d2d  pc  f53e3412\nDEBUG   : backtrace:\nDEBUG   :       #00 pc 00003412  /apex/com.android.vndk.v33/lib/libtinyalsa.so (mixer_get_ctl_by_name+8) (BuildId: 6e947b259e8f1a0bab7de7ff93d5e3d6)\nDEBUG   :       #01 pc 00005d29  /vendor/lib/liba2dpoffload.so (configure_sbc_enc_format+64) (BuildId: 2446a63cde12726d53479b58639cb062)\nDEBUG   :       #02 pc 00006a2d  /vendor/lib/liba2dpoffload.so (configure_a2dp_encoder_format+500) (BuildId: 2446a63cde12726d53479b58639cb062)\nDEBUG   :       #03 pc 00006c81  /vendor/lib/liba2dpoffload.so (a2dp_start_playback+264) (BuildId: 2446a63cde12726d53479b58639cb062)\nDEBUG   :       #04 pc 0002ba38  /vendor/lib/hw/audio.primary.kona.so (enable_snd_device+984) (BuildId: 27e1c6a7f6efc37f7f6a4cbd7f6319e8)\nDEBUG   :       #05 pc 0002c4fc  /vendor/lib/hw/audio.primary.kona.so (select_devices+1976) (BuildId: 27e1c6a7f6efc37f7f6a4cbd7f6319e8)\nDEBUG   :       #06 pc 0002fee0  /vendor/lib/hw/audio.primary.kona.so (start_output_stream+876) (BuildId: 27e1c6a7f6efc37f7f6a4cbd7f6319e8)\nDEBUG   :       #07 pc 0003828c  /vendor/lib/hw/audio.primary.kona.so (out_write+1524) (BuildId: 27e1c6a7f6efc37f7f6a4cbd7f6319e8)\nDEBUG   :       #08 pc 000222db  /vendor/lib/hw/android.hardware.audio@6.0-impl.so (android::hardware::audio::V6_0::implementation::(anonymous namespace)::WriteThread::threadLoop()+222) (BuildId: 1b91f8aab254076c37616434ff77cc3b)\nDEBUG   :       #09 pc 0000d759  /apex/com.android.vndk.v33/lib/libutils.so (android::Thread::_threadLoop(void*)+264) (BuildId: 0057647f6e8a79f92ab533fa93b13d0c)\nDEBUG   :       #10 pc 00083993  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 6f2aa33bf1cc46c3d11ca2fa1576d4d2)\nDEBUG   :       #11 pc 0003aafd  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 6f2aa33bf1cc46c3d11ca2fa1576d4d2)",
       "revId": "d2f476baf4cedd5ef58d294ada6c431b1cdd69d3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54c4503c_c101414a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-06-18T06:34:33Z",
+      "side": 1,
+      "message": "Did you mean that without this patchset chain, the bluetooth audio is broken?",
+      "parentUuid": "3e05acd8_713e9cd5",
+      "revId": "d2f476baf4cedd5ef58d294ada6c431b1cdd69d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
