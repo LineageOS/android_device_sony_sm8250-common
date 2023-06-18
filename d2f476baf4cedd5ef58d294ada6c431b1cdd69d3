@@ -68,6 +68,23 @@
       "parentUuid": "3e05acd8_713e9cd5",
       "revId": "d2f476baf4cedd5ef58d294ada6c431b1cdd69d3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8547a56c_57ff5973",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-06-18T23:42:13Z",
+      "side": 1,
+      "message": "My pdx206\u0027s firmware was broken. After going back to stock and installing the official build, a2dp offload is working fine!\nThis patchset chain is unnecessary.",
+      "revId": "d2f476baf4cedd5ef58d294ada6c431b1cdd69d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
