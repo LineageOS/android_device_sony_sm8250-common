@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1fa2c4b_771b9bb0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-06-21T12:09:22Z",
+      "side": 1,
+      "message": "No need as of https://review.lineageos.org/c/LineageOS/android_frameworks_av/+/359313",
+      "revId": "c7f70b75cd0151dc113e3a0e426c4cba11c07cdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
