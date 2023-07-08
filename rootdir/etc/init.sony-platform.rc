@@ -392,5 +392,3 @@ on boot
     # start fingerprint HAL service
     start ets_hal
 
-on property:ro.boot.verifiedbootstate=orange
-    setprop persist.sys.usb.config adb
