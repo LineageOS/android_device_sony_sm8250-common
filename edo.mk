@@ -512,7 +512,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Vendor libstdc++
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++_vendor
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
