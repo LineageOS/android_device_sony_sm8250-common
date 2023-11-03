@@ -464,6 +464,11 @@ PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor \
     android.hidl.base@1.0.vendor
 
+# Sony device library
+PRODUCT_PACKAGES += \
+    com.sony.device \
+    com.sony.idd_dummy
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
