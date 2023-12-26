@@ -103,6 +103,24 @@
       "message": "Are pdx203_defconfig and pdx206_defconfig missing CONFIG_EROFS_FS?",
       "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1b92daa_63952ea1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-12-26T23:23:57Z",
+      "side": 1,
+      "message": "yes, we are missing that..",
+      "parentUuid": "dc974d6e_394418c1",
+      "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
