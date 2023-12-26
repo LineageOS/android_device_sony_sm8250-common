@@ -68,6 +68,24 @@
       "message": "android_kernel_sony_sm8250 does not have fs/erofs, android_kernel_oneplus_sm8250 and android_kernel_sony_sm8350 have fs/erofs.",
       "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ee4b490_5f6095f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-12-26T23:15:06Z",
+      "side": 1,
+      "message": "it is in drivers/staging",
+      "parentUuid": "4f440134_eeab85aa",
+      "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
