@@ -121,6 +121,23 @@
       "parentUuid": "dc974d6e_394418c1",
       "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "757741f4_b7237953",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-12-28T06:47:53Z",
+      "side": 1,
+      "message": "I found that the staging erofs driver does not work well with lineage-21. We need the updated erofs driver. See this chain \u003chttps://review.lineageos.org/c/LineageOS/android_kernel_sony_sm8250/+/378281\u003e.",
+      "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
