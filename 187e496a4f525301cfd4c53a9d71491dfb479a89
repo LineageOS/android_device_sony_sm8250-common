@@ -156,6 +156,24 @@
       "parentUuid": "757741f4_b7237953",
       "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d83cf03e_89f46d90",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2023-12-29T07:15:36Z",
+      "side": 1,
+      "message": "I prefer not to merge this commit and the kernel chain. I want to hold the erofs for a while and then abandon.",
+      "parentUuid": "481b7a27_0dbabb1a",
+      "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
