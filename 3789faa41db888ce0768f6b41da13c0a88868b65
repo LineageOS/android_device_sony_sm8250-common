@@ -16,6 +16,24 @@
       "message": "There is this SO-51A:\nhttps://xdaforums.com/t/rom-officiall-pdx203-12-1-lineageos-19-1.4449551/post-87560519",
       "revId": "3789faa41db888ce0768f6b41da13c0a88868b65",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d99fcee_e8bc05c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29356
+      },
+      "writtenOn": "2024-01-16T08:12:37Z",
+      "side": 1,
+      "message": "Well, also SOG01. Docomo/KDDI SKUs are not checked before. (Or can it be repartitioned by force-flashing SIM-free ROM?)",
+      "parentUuid": "4e2a82d1_f89b54e1",
+      "revId": "3789faa41db888ce0768f6b41da13c0a88868b65",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
