@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e2a82d1_f89b54e1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2024-01-16T07:11:17Z",
+      "side": 1,
+      "message": "There is this SO-51A:\nhttps://xdaforums.com/t/rom-officiall-pdx203-12-1-lineageos-19-1.4449551/post-87560519",
+      "revId": "3789faa41db888ce0768f6b41da13c0a88868b65",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
