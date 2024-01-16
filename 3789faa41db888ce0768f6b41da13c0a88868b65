@@ -34,6 +34,24 @@
       "parentUuid": "4e2a82d1_f89b54e1",
       "revId": "3789faa41db888ce0768f6b41da13c0a88868b65",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe30f494_c1dd42af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2024-01-16T08:22:29Z",
+      "side": 1,
+      "message": "I am not sure, I don\u0027t have those devices to test...",
+      "parentUuid": "3d99fcee_e8bc05c2",
+      "revId": "3789faa41db888ce0768f6b41da13c0a88868b65",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
