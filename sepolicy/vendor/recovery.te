@@ -1,1 +1,0 @@
-allow init sysfs_tsp:file { open read write };

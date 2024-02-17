@@ -1,5 +1,0 @@
-allow rild somc_hw_radio_hwservice:hwservice_manager { add find };
-allow rild hal_secd_hwservice:hwservice_manager { find };
-
-allow rild hal_secd_default:binder { call transfer };
-allow rild tad_socket:dir { write };
