@@ -1,6 +1,0 @@
-allow system_server init:unix_stream_socket connectto;
-
-allow system_server sysfs_leds:dir { read open };
-
-allow system_server hal_disp_hwservice:hwservice_manager { find };
-allow system_server hal_disp_default:binder { call transfer };

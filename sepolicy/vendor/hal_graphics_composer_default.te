@@ -1,9 +1,0 @@
-allow hal_graphics_composer_default vendor_display_color_prop:file { read open getattr map };
-
-allow hal_graphics_composer_default display_always_on_prop:file { read getattr map open };
-allow hal_graphics_composer_default display_always_on_prop:property_service { set };
-
-allow hal_graphics_composer_default property_socket:sock_file { write };
-
-allow hal_graphics_composer_default init:unix_stream_socket { connectto };
-allow hal_graphics_composer_default sysfs_dp:file { write };
