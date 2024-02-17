@@ -1,8 +1,0 @@
-allow hal_audio_default vendor_audio_data_file:dir create_dir_perms;
-allow hal_audio_default vendor_audio_data_file:file create_file_perms;
-
-allow hal_audio_default hal_miscta_hwservice:hwservice_manager { find };
-allow hal_audio_default hal_miscta_default:binder { call };
-
-allow hal_audio_default vendor_sysfs_kgsl:file r_file_perms;
-

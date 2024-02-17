@@ -1,4 +1,0 @@
-allow hwservicemanager keyprovd:binder { call transfer };
-allow hwservicemanager keyprovd:dir { search };
-allow hwservicemanager keyprovd:file { read map open };
-allow hwservicemanager keyprovd:process { getattr };

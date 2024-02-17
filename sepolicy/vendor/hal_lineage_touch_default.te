@@ -1,4 +1,0 @@
-# Allow hal_lineage_touch_default write commands to display cmd interface
-allow hal_lineage_touch_default sysfs_tsp:dir search;
-allow hal_lineage_touch_default sysfs_tsp:file rw_file_perms;
-get_prop(hal_lineage_touch_default, vendor_display_prop);

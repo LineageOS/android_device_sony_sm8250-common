@@ -1,1 +1,0 @@
-allow vendor_vppservice hal_swiqi_hwservice:hwservice_manager { find add };
