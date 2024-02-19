@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2851ed7_703fbe02",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2024-02-19T09:18:47Z",
+      "side": 1,
+      "message": "a2dp, gps, graphics, and radio works without problem",
+      "revId": "5c1ca2f5125852157110fd24dbf18f4420adc001",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
