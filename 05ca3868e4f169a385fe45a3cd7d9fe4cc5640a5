@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b4c9311_ea5e7932",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31841
+      },
+      "writtenOn": "2024-02-28T23:10:51Z",
+      "side": 1,
+      "message": "cleanups, mostly taken from oneplus_sm8250\nplease review the entire chain",
+      "revId": "05ca3868e4f169a385fe45a3cd7d9fe4cc5640a5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
