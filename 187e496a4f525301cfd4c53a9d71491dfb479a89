@@ -192,6 +192,23 @@
       "parentUuid": "d83cf03e_89f46d90",
       "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3cc9c675_1f9b078e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2024-04-18T14:05:02Z",
+      "side": 1,
+      "message": "Might need to try OTA from previous build (no erofs support) to a build that contains erofs build, and see if it works.",
+      "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
