@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-service msim_sh /vendor/bin/init.qcom.msim.sh
+service msim_sh /odm/bin/init.qcom.msim.sh
     user root
     group root
     oneshot
