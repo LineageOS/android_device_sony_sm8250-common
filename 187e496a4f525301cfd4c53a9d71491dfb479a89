@@ -298,6 +298,24 @@
       "parentUuid": "535b4fbe_789c0b63",
       "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8b70378_b61840cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2024-04-19T09:18:19Z",
+      "side": 1,
+      "message": "I tried to update the ROM (erofs kernel + this commit) via recovery (no erofs kernel) but it failed.",
+      "parentUuid": "3c1ad82d_46572b41",
+      "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
