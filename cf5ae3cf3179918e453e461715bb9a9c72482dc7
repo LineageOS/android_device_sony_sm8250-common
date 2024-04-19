@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c92a52fa_2f14447a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2024-04-19T08:35:09Z",
+      "side": 1,
+      "message": "WFD is currently broken.\nBlob update is here: https://github.com/kyasu/proprietary_vendor_sony_sm8250-common",
+      "revId": "cf5ae3cf3179918e453e461715bb9a9c72482dc7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
