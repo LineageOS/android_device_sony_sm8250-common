@@ -334,6 +334,24 @@
       "parentUuid": "a8b70378_b61840cc",
       "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75e00438_c636180a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2024-04-19T16:03:20Z",
+      "side": 1,
+      "message": "The recovery.log is as follows:\n```\n[  129.542243] 03-04 05:06:47.591   627   627 I update_engine_sideload: [INFO:subprocess.cc(103)] Running \"/postinstall/system/bin/otapreopt_script 1 3\"\n[  129.554826] 03-04 05:06:47.604   627   627 I update_engine_sideload: [INFO:subprocess.cc(163)] Subprocess output:\n[  129.554832] /postinstall/system/bin/otapreopt_script: Error: boot-complete not detected.\n[  129.554834]\n[  129.555368] 03-04 05:06:47.604   627   627 W update_engine_sideload: [WARNING:utils.cc(685)] Unable to mount destination device /dev/block/dm-3 on /postinstall as erofs: No such device (19)\n[  129.555387] 03-04 05:06:47.604   627   627 E update_engine_sideload: [ERROR:utils.cc(689)] Unable to mount /dev/block/dm-3 with any supported type\n[  129.555417] 03-04 05:06:47.604   627   627 E update_engine_sideload: [ERROR:snapshot_stub.cpp(169)] UnmapAllSnapshots should never be called.\n[  129.555441] 03-04 05:06:47.604   627   627 I update_engine_sideload: [INFO:dynamic_partition_control_android.cc(311)] Destroying [odm_b, product_b, system_b, vendor_b] from device mapper\n[  129.581981] 03-04 05:06:47.631   627   627 I update_engine_sideload: [INFO:fs_mgr_dm_linear.cpp(277)] [libfs_mgr] Unmapped logical partition odm_b\n[  129.582008] 03-04 05:06:47.631   627   627 I update_engine_sideload: [INFO:dynamic_partition_control_android.cc(287)] Skip UnmapUpdateSnapshot(odm_b) because metadata is not mounted\n[  129.582031] 03-04 05:06:47.631   627   627 I update_engine_sideload: [INFO:dynamic_partition_control_android.cc(296)] Successfully unmapped odm_b from device mapper.\n[  129.593981] 03-04 05:06:47.643   627   627 I update_engine_sideload: [INFO:fs_mgr_dm_linear.cpp(277)] [libfs_mgr] Unmapped logical partition product_b\n[  129.594000] 03-04 05:06:47.643   627   627 I update_engine_sideload: [INFO:dynamic_partition_control_android.cc(287)] Skip UnmapUpdateSnapshot(product_b) because metadata is not mounted\n[  129.594016] 03-04 05:06:47.643   627   627 I update_engine_sideload: [INFO:dynamic_partition_control_android.cc(296)] Successfully unmapped product_b from device mapper.\n[  129.613976] 03-04 05:06:47.663   627   627 I update_engine_sideload: [INFO:fs_mgr_dm_linear.cpp(277)] [libfs_mgr] Unmapped logical partition system_b\n[  129.613993] 03-04 05:06:47.663   627   627 I update_engine_sideload: [INFO:dynamic_partition_control_android.cc(287)] Skip UnmapUpdateSnapshot(system_b) because metadata is not mounted\n[  129.614010] 03-04 05:06:47.663   627   627 I update_engine_sideload: [INFO:dynamic_partition_control_android.cc(296)] Successfully unmapped system_b from device mapper.\n[  129.645991] 03-04 05:06:47.695   627   627 I update_engine_sideload: [INFO:fs_mgr_dm_linear.cpp(277)] [libfs_mgr] Unmapped logical partition vendor_b\n[  129.646016] 03-04 05:06:47.695   627   627 I update_engine_sideload: [INFO:dynamic_partition_control_android.cc(287)] Skip UnmapUpdateSnapshot(vendor_b) because metadata is not mounted\n[  129.646036] 03-04 05:06:47.695   627   627 I update_engine_sideload: [INFO:dynamic_partition_control_android.cc(296)] Successfully unmapped vendor_b from device mapper.\n[  129.646057] 03-04 05:06:47.695   627   627 I update_engine_sideload: [INFO:postinstall_runner_action.cc(524)] Unmapped all partitions.\n[  129.646076] 03-04 05:06:47.695   627   627 E update_engine_sideload: [ERROR:postinstall_runner_action.cc(532)] Postinstall action failed.\n[  129.646141] 03-04 05:06:47.695   627   627 I update_engine_sideload: [INFO:action_processor.cc(116)] ActionProcessor: finished last action PostinstallRunnerAction with code ErrorCode::kPostInstallMountError\n[  129.646163] 03-04 05:06:47.695   627   627 I update_engine_sideload: [INFO:update_attempter_android.cc(712)] Processing Done.\n[  129.646188] 03-04 05:06:47.695   627   627 E update_engine_sideload: [ERROR:snapshot_stub.cpp(169)] UnmapAllSnapshots should never be called.\n[  129.646335] 03-04 05:06:47.695   627   627 E update_engine_sideload: [ERROR:snapshot_stub.cpp(169)] UnmapAllSnapshots should never be called.\n```\n\nSeems it does need to mount the /dev/block/dm-3 partition as postinstall",
+      "parentUuid": "3c1ad82d_46572b41",
+      "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
