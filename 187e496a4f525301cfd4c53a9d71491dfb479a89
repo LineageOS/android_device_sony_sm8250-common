@@ -226,6 +226,24 @@
       "message": "updated kernel supports erofs",
       "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ddf8d42d_8a92422b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2024-04-19T00:07:28Z",
+      "side": 1,
+      "message": "OTA will fail with the recovery kernel that do not support erofs.\nSo we need to release the kernel update first and then release this commit some time later.\nIt might be a good idea to release this commit around the next QPR.",
+      "parentUuid": "3cc9c675_1f9b078e",
+      "revId": "187e496a4f525301cfd4c53a9d71491dfb479a89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
