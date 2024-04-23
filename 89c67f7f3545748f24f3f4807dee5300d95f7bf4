@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68ed1c40_044e4477",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2024-04-23T01:16:30Z",
+      "side": 1,
+      "message": "sm8550-common -\u003e sm8250-common in commit message",
+      "revId": "89c67f7f3545748f24f3f4807dee5300d95f7bf4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
