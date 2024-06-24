@@ -1889,7 +1889,7 @@ vendor/etc/init/mlog_qmi_service.rc
 vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/icm.conf
 vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/regdb.bin
+vendor/etc/wifi/regdb.bin;SYMLINK=vendor/firmware/qca6390/regdb.bin
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # SIM control
