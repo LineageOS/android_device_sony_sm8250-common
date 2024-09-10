@@ -126,6 +126,11 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libcrypto.so')
         .add_needed('libiVptHkiDec.so'),
+    (
+        'vendor/lib/mediadrm/libwvdrmengine.so',
+        'vendor/lib/libwvhidl.so',
+    ): blob_fixup()
+        .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
