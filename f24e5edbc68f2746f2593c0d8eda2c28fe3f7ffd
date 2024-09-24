@@ -16,6 +16,24 @@
       "message": "Thanks! Can you specify the test cases of this patchset?\nLike what test did you do to verify this works?",
       "revId": "f24e5edbc68f2746f2593c0d8eda2c28fe3f7ffd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1af66b97_ac3f913d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34003
+      },
+      "writtenOn": "2024-09-24T18:20:00Z",
+      "side": 1,
+      "message": "Played hi-res (24bit/96khz) audio through the audio jack and verified in the music player that it was not downsampling to 16bit/96khz or 16bit/48khz.",
+      "parentUuid": "a2c436cd_f8bfbb05",
+      "revId": "f24e5edbc68f2746f2593c0d8eda2c28fe3f7ffd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
