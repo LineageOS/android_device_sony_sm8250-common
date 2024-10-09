@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "864b5e92_c4b667d9",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 1623,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2024-10-09T02:15:06Z",
+      "side": 1,
+      "message": "Why is the hash value different?",
+      "range": {
+        "startLine": 1623,
+        "startChar": 32,
+        "endLine": 1623,
+        "endChar": 72
+      },
+      "revId": "5e611d05fd40ae4e0c7cf7f48f1c287f77570bf9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
