@@ -52,6 +52,24 @@
       "parentUuid": "beb765a1_31c640b6",
       "revId": "81e5c5fc5c2e0eadbb88bc197ffe3085e2124efa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a7a785ec_19f99cfd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2024-10-12T08:54:34Z",
+      "side": 1,
+      "message": "android.hardware.bluetooth@1.0-impl-qti.so depends on libqmiservices.so but not all of qmi stuff are necessary. I will narrow down qmi staff.",
+      "parentUuid": "efcc1785_b4e0a3a0",
+      "revId": "81e5c5fc5c2e0eadbb88bc197ffe3085e2124efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
