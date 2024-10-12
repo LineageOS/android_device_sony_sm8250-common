@@ -34,6 +34,24 @@
       "parentUuid": "44e09060_4c082b79",
       "revId": "81e5c5fc5c2e0eadbb88bc197ffe3085e2124efa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "efcc1785_b4e0a3a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-10-12T08:12:45Z",
+      "side": 1,
+      "message": "and what about all of that qmi stuff, does bluetooth depend on that?",
+      "parentUuid": "beb765a1_31c640b6",
+      "revId": "81e5c5fc5c2e0eadbb88bc197ffe3085e2124efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
