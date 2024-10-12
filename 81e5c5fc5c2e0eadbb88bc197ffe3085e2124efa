@@ -16,6 +16,24 @@
       "message": "how come all of this is required?",
       "revId": "81e5c5fc5c2e0eadbb88bc197ffe3085e2124efa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "beb765a1_31c640b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2024-10-12T08:06:27Z",
+      "side": 1,
+      "message": "Without the 32-bit bluetooth libs, A2DP failed. Then added the 32-bit bluetooth A2DP libs and fixed the build errors like this one by one:\n\u003e error: vendor/sony/sm8250-common/Android.bp:1547:1: dependency \"libxml\" of \"libc\nonfigdb\" missing variant:",
+      "parentUuid": "44e09060_4c082b79",
+      "revId": "81e5c5fc5c2e0eadbb88bc197ffe3085e2124efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
