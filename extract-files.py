@@ -86,17 +86,23 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     (
+        'system_ext/lib/libwfdmmsrc_system.so',
+    ): blob_fixup()
+        .add_needed('libgui_shim.so'),
+    (
         'system_ext/lib64/libwfdnative.so',
+    ): blob_fixup()
+        .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so')
+        .add_needed('libinput_shim.so'),
+    (
         'vendor/lib64/libvpplibrary.so',
         'vendor/lib64/libswiqisettinghelper.so',
         'vendor/lib64/vendor.somc.hardware.swiqi@1.0-impl.so',
     ): blob_fixup()
-        #.binary_regex_replace(b'android.hidl.base@1.0.so', b'libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'),
         .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
     (
         'product/lib64/libdpmframework.so',
     ): blob_fixup()
-        #.binary_regex_replace(b'libhidltransport.so', b'libcutils-v29.so\x00\x00\x00'),
         .replace_needed('libhidltransport.so', 'libcutils-v29.so'),
     (
         'vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so',
