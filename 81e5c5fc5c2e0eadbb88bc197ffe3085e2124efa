@@ -70,6 +70,24 @@
       "parentUuid": "efcc1785_b4e0a3a0",
       "revId": "81e5c5fc5c2e0eadbb88bc197ffe3085e2124efa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b2364553_3524b1c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-10-12T08:58:52Z",
+      "side": 1,
+      "message": "ah, interesting, I thought it wouldn\u0027t depend on qmi at all.",
+      "parentUuid": "a7a785ec_19f99cfd",
+      "revId": "81e5c5fc5c2e0eadbb88bc197ffe3085e2124efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
