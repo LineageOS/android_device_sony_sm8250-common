@@ -72,20 +72,21 @@ function blob_fixup() {
     case "${1}" in
     system_ext/lib64/libwfdnative.so | vendor/lib64/libvpplibrary.so | vendor/lib64/libswiqisettinghelper.so | /vendor/lib64/vendor.somc.hardware.swiqi@1.0-impl.so)
         [ "$2" = "" ] && return 0
-        sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+        grep -q "android.hidl.base@1.0.so" "${2}" && sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/g" "${2}"
         ;;
     product/lib64/libdpmframework.so)
         [ "$2" = "" ] && return 0
-        sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
+        grep -q "libhidltransport.so" "${2}" && sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/g" "${2}"
         ;;
     vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so)
         [ "$2" = "" ] && return 0
-        "${PATCHELF}" --replace-needed "android.hardware.light-V1-ndk_platform.so" "android.hardware.light-V1-ndk.so" "${2}"
+        grep -q "android.hardware.light-V1-ndk.so" "${2}" || "${PATCHELF}" --replace-needed "android.hardware.light-V1-ndk_platform.so" "android.hardware.light-V1-ndk.so" "${2}"
         ;;
     vendor/lib64/vendor.somc.camera* | vendor/bin/hw/vendor.somc.hardware.camera.*)
         [ "$2" = "" ] && return 0
-        "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
-        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        grep -q "libutils-v32.so" "${2}" || "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+        grep -q "libhidlbase-v32.so" "${2}" || "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        grep -q "libbinder-v32.so" "${2}" && return 0
         if ! "${PATCHELF}" --print-needed "${2}" | grep "libbinder.so" > /dev/null; then
             "${PATCHELF}" --add-needed "libbinder-v32.so" "${2}"
         else
@@ -94,12 +95,12 @@ function blob_fixup() {
         ;;
     vendor/lib/libiVptApi.so | vendor/lib64/libiVptApi.so)
         [ "$2" = "" ] && return 0
-        "${PATCHELF}" --add-needed "libiVptLibC.so" "${2}"
+        grep -q "libiVptLibC.so" "${2}" || "${PATCHELF}" --add-needed "libiVptLibC.so" "${2}"
         ;;
     vendor/lib/libiVptLibC.so | vendor/lib64/libiVptLibC.so | vendor/lib/libHpEqApi.so | vendor/lib64/libHpEqApi.so)
         [ "$2" = "" ] && return 0
-        "${PATCHELF}" --add-needed "libcrypto.so" "${2}"
-        "${PATCHELF}" --add-needed "libiVptHkiDec.so" "${2}"
+        grep -q "libcrypto.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto.so" "${2}"
+        grep -q "libiVptHkiDec.so" "${2}" || "${PATCHELF}" --add-needed "libiVptHkiDec.so" "${2}"
         ;;
     esac
 
