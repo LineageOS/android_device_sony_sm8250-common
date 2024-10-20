@@ -167,6 +167,7 @@ vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbluetooth_audio_session_qti_2_1.so
+vendor/lib/libsoc_helper.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
@@ -178,15 +179,10 @@ vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
+vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
-
-# Bluetooth (Other libs)
-vendor/lib/libbluetooth_audio_session_qti_2_1.so
-vendor/lib/libsoc_helper.so
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/libsoc_helper.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -479,11 +475,11 @@ system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
 system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
 system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
 system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
--system_ext/lib64/com.quicinc.cne.api@1.0.so
--system_ext/lib64/com.quicinc.cne.api@1.1.so
--system_ext/lib64/com.quicinc.cne.constants@1.0.so
--system_ext/lib64/com.quicinc.cne.constants@2.0.so
--system_ext/lib64/com.quicinc.cne.constants@2.1.so
+system_ext/lib64/com.quicinc.cne.api@1.0.so
+system_ext/lib64/com.quicinc.cne.api@1.1.so
+system_ext/lib64/com.quicinc.cne.constants@1.0.so
+system_ext/lib64/com.quicinc.cne.constants@2.0.so
+system_ext/lib64/com.quicinc.cne.constants@2.1.so
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
@@ -563,7 +559,6 @@ vendor/lib64/libwms.so
 vendor/lib64/libwqe.so;DISABLE_CHECKELF
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
-vendor/lib64/vendor.qti.data.factory@2.1.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
 vendor/lib64/vendor.qti.data.factory@2.2.so
 vendor/lib64/vendor.qti.data.factory@2.3.so
@@ -651,7 +646,7 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # DPM
-framework/tcmclient.jar
+system/framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
@@ -723,10 +718,10 @@ vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 # FM
 system_ext/lib/fm_helium.so
 system_ext/lib/libfm-hci.so
--system_ext/lib/vendor.qti.hardware.fm@1.0.so
+system_ext/lib/vendor.qti.hardware.fm@1.0.so
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
--system_ext/lib64/vendor.qti.hardware.fm@1.0.so
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 
 # Gatekeeper
@@ -1315,8 +1310,7 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib/vendor.qti.data.slm@1.0.so
 
 # Secd
-lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.0.so;MODULE_SUFFIX=_vendor
-lib64/vendor.somc.hardware.miscta@1.0.so:vendor/lib64/vendor.somc.hardware.miscta@1.0.so;MODULE_SUFFIX=_vendor
+system/lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.0.so
 system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
 system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
@@ -1524,9 +1518,9 @@ vendor/etc/sensors/sns_reg_config
 
 # Snapdragon Computer Vision Engine
 vendor/lib/libfastcvdsp_stub.so
--vendor/lib/libfastcvopt.so
+vendor/lib/libfastcvopt.so
 vendor/lib64/libfastcvdsp_stub.so
--vendor/lib64/libfastcvopt.so
+vendor/lib64/libfastcvopt.so
 
 # SSR
 vendor/bin/ssr_setup
@@ -1537,8 +1531,8 @@ vendor/bin/tad
 
 # TA QMI
 vendor/bin/ta_qmi_service
--vendor/lib/libta.so
--vendor/lib64/libta.so
+vendor/lib/libta.so
+vendor/lib64/libta.so
 
 # Time services
 vendor/app/TimeService/TimeService.apk
@@ -1561,7 +1555,7 @@ vendor/lib64/liblights-core.so
 vendor/lib64/libsomc_thermal.so
 vendor/lib64/libsys-utils.so
 vendor/lib64/libthermal_engine.so
--vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.semc.hardware.thermal@1.0.so
 
 # Trusted Execution Environment connector

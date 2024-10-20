@@ -40,8 +40,7 @@ function lib_to_package_fixup_vendor_variants() {
     fi
 
     case "$1" in
-        vendor.somc.hardware.miscta@1.0 | \
-            com.qualcomm.qti.dpm.api@1.0 | \
+        com.qualcomm.qti.dpm.api@1.0 | \
             libmmosal | \
             vendor.qti.hardware.fm@1.0 | \
             vendor.qti.hardware.tui_comm@1.0 | \
