@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d1e6da3_e40f8792",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2024-10-22T03:21:10Z",
+      "side": 1,
+      "message": "blobs are here: https://github.com/kyasu/proprietary_vendor_sony_sm8250-common",
+      "revId": "2d8491de9e927817103df78177e6d9f59be0bbee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
