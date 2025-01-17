@@ -359,7 +359,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.sony_edo
+    android.hardware.light-service.lineage
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -437,7 +437,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    android.hardware.light-V1-ndk_platform.vendor \
     android.hidl.base@1.0.vendor
 
 # Sony device library
