@@ -121,7 +121,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     tinyplay \
     tinymix \
-    audio_amplifier.kona
+    audio_amplifier.qcom
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
