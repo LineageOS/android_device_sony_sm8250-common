@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae6f658e_dbaa695f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2025-02-08T11:37:58Z",
+      "side": 1,
+      "message": "fyi I will test this and sm8350 tree after Feb 10th",
+      "revId": "75b5e64ad47d186729bdf645d916d9b5e4502925",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
