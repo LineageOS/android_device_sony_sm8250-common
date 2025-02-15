@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f050132b_1dbec0f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2025-02-15T17:58:51Z",
+      "side": 1,
+      "message": "let\u0027s postpone this change, since it is not full functional",
+      "revId": "d588244c5dd6421fcbdfa7377cace37915b04b57",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
