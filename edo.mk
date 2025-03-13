@@ -209,7 +209,8 @@ PRODUCT_PACKAGES += \
     libexif.vendor \
     libutilscallstack.vendor \
     libyuv.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    vendor_camera_symlink
 
 # Charger
 PRODUCT_PACKAGES += \
