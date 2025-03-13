@@ -104,7 +104,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/vendor.somc.camera.device@3.5-impl.so',
         'vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service',
     ): blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v32.so'),
+        .replace_needed('libutils.so', 'libutils-v32.so')
+        .add_needed('libprocessgroup-v32.so'),
     (
         'vendor/lib/libiVptApi.so',
         'vendor/lib64/libiVptApi.so',
