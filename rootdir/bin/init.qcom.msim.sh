@@ -10,7 +10,7 @@ case "$model" in
 esac
 
 if [ "$model" == "" ]; then
-    setprop vendor.radio.ltalabel.model "unknown"
+    setprop vendor.radio.ltalabel.model "JP"
 else
     setprop vendor.radio.ltalabel.model "$model"
 fi
