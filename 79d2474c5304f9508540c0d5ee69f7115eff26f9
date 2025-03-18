@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "488ab814_c9a49239",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2025-03-18T17:01:47Z",
+      "side": 1,
+      "message": "@kyasu.dev@gmail.com do you think it is ok to do this?",
+      "revId": "79d2474c5304f9508540c0d5ee69f7115eff26f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
