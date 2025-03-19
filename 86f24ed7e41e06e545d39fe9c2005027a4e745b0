@@ -16,6 +16,23 @@
       "message": "this should work.",
       "revId": "86f24ed7e41e06e545d39fe9c2005027a4e745b0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ca6b888_94fe71e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26313
+      },
+      "writtenOn": "2025-03-19T04:56:33Z",
+      "side": 1,
+      "message": "We can get device name from LTALabel, just need to run sed several times under different variants. But they all have one SIM and use one NFC config, that\u0027s why I wrote that there is no need to do this.",
+      "revId": "86f24ed7e41e06e545d39fe9c2005027a4e745b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
