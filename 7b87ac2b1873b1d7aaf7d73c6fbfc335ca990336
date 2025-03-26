@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab8f82f4_0166f69c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22176
+      },
+      "writtenOn": "2025-03-26T18:59:48Z",
+      "side": 1,
+      "message": "Also SecureElement is built by default.",
+      "revId": "7b87ac2b1873b1d7aaf7d73c6fbfc335ca990336",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
