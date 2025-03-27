@@ -13,10 +13,14 @@ on boot
     # Enable smart charging
     write /sys/class/power_supply/battery_ext/smart_charging_activation 1
 
-on post-fs
+on early-init
     # radio
+    wait /dev/block/by-name/LTALabel
     exec_start msim_sh
-    setprop persist.radio.multisim.config ${vendor.radio.multisim.config}
+    setprop ro.boot.product.hardware.sku ${vendor.radio.hardware.sku}
+
+on post-fs
+    setprop persist.radio.multisim.config ${vendor.radio.hardware.sku}${vendor.radio.hardware.sku}
     setprop ro.vendor.ltalabel.model ${vendor.radio.ltalabel.model}
 
 on property:ro.vendor.ltalabel.model=XQ-AT42
