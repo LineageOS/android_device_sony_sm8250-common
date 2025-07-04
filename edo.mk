@@ -40,6 +40,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     NcmTetheringOverlay \
+    SimDualResCommon \
+    SimSingleResCommon \
     SonyEdoFrameworksResCommon \
     SonyEdoSettingsProviderOverlayCommon \
     SonyEdoSettingsResCommon \
