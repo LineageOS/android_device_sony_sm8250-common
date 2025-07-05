@@ -106,6 +106,11 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libwvhidl.so',
     ): blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    (
+        'vendor/lib64/libsomc_camerahal.so',
+        'vendor/lib64/libsomc_chokoballcmn.so',
+    ): blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
