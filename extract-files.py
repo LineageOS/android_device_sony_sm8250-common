@@ -123,6 +123,15 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libwvhidl.so',
     ): blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    # Correct the size of GraphicsBuffer in the lib:
+    # operator.new(0x108) -> operator.new(0xd30)
+    # -000327c0: 6826 8052 6940 8052 0021 8052 3911 881a  h&.Ri@.R.!.R9...
+    # +000327c0: 6826 8052 6940 8052 00a6 8152 3911 881a  h&.Ri@.R...R9...
+    (
+        'vendor/lib64/libsomc_chokoballcmn.so'
+    ): blob_fixup()
+       .binary_regex_replace(b'\x68\x26\x80\x52\x69\x40\x80\x52\x00\x21\x80\x52\x39\x11\x88\x1a',
+                             b'\x68\x26\x80\x52\x69\x40\x80\x52\x00\xa6\x81\x52\x39\x11\x88\x1a'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
