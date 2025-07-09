@@ -209,6 +209,7 @@ PRODUCT_PACKAGES += \
     init.qti.ufs.rc \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
+    init.qti.media.sh \
     init.qti.qcv.sh \
     qca6234-service.sh \
     init.recovery.qcom.rc \
@@ -278,6 +279,7 @@ $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     $(LOCAL_PATH)/configs/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
+    $(LOCAL_PATH)/configs/media_codecs_kona_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kona.xml \
     $(LOCAL_PATH)/configs/media_codecs_performance_kona_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kona.xml
 
 PRODUCT_COPY_FILES += \
@@ -304,6 +306,18 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     SecureElement \
     Tag
+
+# OMX
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw
 
 # Partitions
 PRODUCT_PACKAGES += \
