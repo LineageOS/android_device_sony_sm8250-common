@@ -92,6 +92,7 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('libhidltransport.so', 'libcutils-v29.so'),
     (
+        'vendor/lib64/libcammw.so',
         'vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so',
     ): blob_fixup()
         .replace_needed('android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'),
