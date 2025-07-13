@@ -16,6 +16,24 @@
       "message": "Why?",
       "revId": "0876d87b0ad76465a8ed4c09746e0dac11354652",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74f8b83a_a212b5c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2025-07-13T13:22:28Z",
+      "side": 1,
+      "message": "Aperture video recording is not working since 22.1. Maybe it\u0027s a problem caused by sony camera blob.",
+      "parentUuid": "dd451faa_866bddcf",
+      "revId": "0876d87b0ad76465a8ed4c09746e0dac11354652",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
