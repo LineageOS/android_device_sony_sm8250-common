@@ -1056,9 +1056,13 @@ vendor/lib64/unnhal-acc-hvx.so
 vendor/lib64/libpn557_fw.so
 
 # OMX
-vendor/lib/libOmxVideoDSMode.so;DISABLE_CHECKELF
-vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
-vendor/lib64/libOmxVpp.so;DISABLE_CHECKELF
+vendor/lib/libOmxVdec.so
+vendor/lib/libOmxVenc.so
+vendor/lib/libOmxVideoDSMode.so
+vendor/lib/libOmxVpp.so
+vendor/lib64/libOmxVdec.so
+vendor/lib64/libOmxVenc.so
+vendor/lib64/libOmxVpp.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
