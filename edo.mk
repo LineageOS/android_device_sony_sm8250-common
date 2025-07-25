@@ -310,8 +310,6 @@ PRODUCT_PACKAGES += \
 # OMX
 PRODUCT_PACKAGES += \
     libOmxCore \
-    libOmxVdec \
-    libOmxVenc \
     libstagefrighthw
 
 # Partitions
