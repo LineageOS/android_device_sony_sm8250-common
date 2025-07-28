@@ -384,6 +384,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/usb_compositions.conf:$(TARGET_COPY_OUT_ODM)/etc/usb_compositions.conf
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
