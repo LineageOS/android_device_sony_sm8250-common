@@ -34,6 +34,24 @@
       "parentUuid": "981e1d30_9472a3fa",
       "revId": "cb353f4dc735b1a628b63eec7401bbd4382fa285",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "167638da_167885cf",
+        "filename": "extract-files.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-30T08:32:37Z",
+      "side": 1,
+      "message": "or write an auto patcher similar to blob_fixup_nop_call() in oplus 8250",
+      "parentUuid": "981e1d30_9472a3fa",
+      "revId": "cb353f4dc735b1a628b63eec7401bbd4382fa285",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
