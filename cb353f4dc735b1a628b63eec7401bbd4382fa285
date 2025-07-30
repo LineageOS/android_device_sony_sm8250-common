@@ -52,6 +52,24 @@
       "parentUuid": "981e1d30_9472a3fa",
       "revId": "cb353f4dc735b1a628b63eec7401bbd4382fa285",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a783c221_ac328dc6",
+        "filename": "extract-files.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-30T08:32:50Z",
+      "side": 1,
+      "message": "\u003ewe plan to just replace it with libui-v34, instead of patching this lib.\n\nthat\u0027s also cool.",
+      "parentUuid": "167638da_167885cf",
+      "revId": "cb353f4dc735b1a628b63eec7401bbd4382fa285",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
