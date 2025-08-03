@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5317df92_b40db7e2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2025-08-03T01:08:15Z",
+      "side": 1,
+      "message": "See https://review.lineageos.org/c/LineageOS/android_device_sony_sm8250-common/+/441792",
+      "revId": "cb353f4dc735b1a628b63eec7401bbd4382fa285",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "981e1d30_9472a3fa",
