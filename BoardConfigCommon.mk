@@ -129,9 +129,6 @@ ODM_MANIFEST_SKUS := ss ds
 ODM_MANIFEST_SS_FILES := $(COMMON_PATH)/manifest_ss.xml
 ODM_MANIFEST_DS_FILES := $(COMMON_PATH)/manifest_ds.xml
 
-# Media
-TARGET_USES_ION := true
-
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
