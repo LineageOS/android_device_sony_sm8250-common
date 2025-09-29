@@ -1,7 +1,6 @@
 # See https://android.googlesource.com/platform/ndk/+/master/docs/PlatformApis.md
 libnpu.so
 libhta_hexagon_runtime.so
-libqti-perfd-client.so
 libadsprpc.so
 libcdsprpc.so
 libsdsprpc.so

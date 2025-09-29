@@ -204,11 +204,6 @@
       <fqname>@1.0::IIdd/logreader</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.perf</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.2::IPerf/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.semc.hardware.display</name>
         <transport>hwbinder</transport>
         <fqname>@2.2::IDisplay/default</fqname>
