@@ -2,7 +2,8 @@
 	"Video": {
 		"Presets": {
 			"enc_default_bframe_count": 1,
-			"enc_max_mbs_per_sec": 7833600
+			"enc_max_mbs_per_sec": 7833600,
+			"enc_linear_color_format": 3
 		}
 	}
 }
