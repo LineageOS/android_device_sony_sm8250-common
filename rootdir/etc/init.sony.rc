@@ -29,5 +29,17 @@ on property:ro.vendor.ltalabel.model=XQ-AT42
 on property:ro.vendor.ltalabel.model=XQ-AS42
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
 
-on property:ro.vendor.ltalabel.model=JP
+on property:ro.vendor.ltalabel.model=A002SO
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:ro.vendor.ltalabel.model=SOG01
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:ro.vendor.ltalabel.model=SOG02
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:ro.vendor.ltalabel.model=SO-51A
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:ro.vendor.ltalabel.model=SO-52A
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
