@@ -259,6 +259,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 #  IPACM
 PRODUCT_PACKAGES += \
     ipacm \
