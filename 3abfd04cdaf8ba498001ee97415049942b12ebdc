@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a2d9c59_bed03784",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2026-08-30T06:55:59Z",
+      "side": 1,
+      "message": "pdx206 boots without this",
+      "revId": "3abfd04cdaf8ba498001ee97415049942b12ebdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
