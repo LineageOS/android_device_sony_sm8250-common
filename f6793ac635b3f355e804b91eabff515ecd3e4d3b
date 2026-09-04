@@ -16,6 +16,24 @@
       "message": "then label it in qcom sepolicy.",
       "revId": "f6793ac635b3f355e804b91eabff515ecd3e4d3b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f841210a_7f7a020d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36192
+      },
+      "writtenOn": "2026-09-04T03:10:34Z",
+      "side": 1,
+      "message": "so,",
+      "parentUuid": "c9d24fd6_229ae313",
+      "revId": "f6793ac635b3f355e804b91eabff515ecd3e4d3b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
