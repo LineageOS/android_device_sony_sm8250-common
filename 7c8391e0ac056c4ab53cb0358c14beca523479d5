@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c539cd83_c7d35ffc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37924
+      },
+      "writtenOn": "2026-09-07T11:03:52Z",
+      "side": 1,
+      "message": "Android samsung S8",
+      "revId": "7c8391e0ac056c4ab53cb0358c14beca523479d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {
